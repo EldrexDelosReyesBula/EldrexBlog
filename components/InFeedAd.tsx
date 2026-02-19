@@ -1,12 +1,31 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const InFeedAd: React.FC = () => {
   const adRef = useRef<HTMLModElement>(null);
   const didInit = useRef(false);
+  const [adConfig, setAdConfig] = useState<{ slot: string; layoutKey: string } | null>(null);
 
   useEffect(() => {
-    if (didInit.current) return;
-    if (!adRef.current) return;
+    const updateConfig = () => {
+        const isDesktop = window.innerWidth >= 768;
+      
+        setAdConfig((prev) => {
+            if (prev) return prev;
+            return isDesktop ? {
+                slot: "3480860525",
+                layoutKey: "-5k+ct+1x-c7+bz"
+            } : {
+                slot: "3864003907",
+                layoutKey: "+41+q1+1y-c7+bv"
+            };
+        });
+    };
+
+    updateConfig();
+  }, []);
+
+  useEffect(() => {
+    if (!adConfig || didInit.current || !adRef.current) return;
     if (adRef.current.innerHTML.trim() !== "") {
          didInit.current = true;
          return;
@@ -20,7 +39,14 @@ const InFeedAd: React.FC = () => {
          console.error("AdSense Error:", e);
       }
     }
-  }, []);
+  }, [adConfig]);
+
+  if (!adConfig) {
+      // Return a skeleton placeholder matching dimensions while determining config
+      return (
+        <div className="flex flex-col h-full w-full min-h-[320px] sm:min-h-[380px] bg-slate-100 dark:bg-slate-800 rounded-2xl animate-pulse border border-slate-100 dark:border-slate-700" />
+      );
+  }
 
   return (
     <div className="flex flex-col h-full w-full min-h-[320px] sm:min-h-[380px]">
@@ -37,9 +63,9 @@ const InFeedAd: React.FC = () => {
                  ref={adRef}
                  style={{ display: 'block', width: '100%', height: '100%' }}
                  data-ad-format="fluid"
-                 data-ad-layout-key="+41+q1+1y-c7+bv"
+                 data-ad-layout-key={adConfig.layoutKey}
                  data-ad-client="ca-pub-6548730882346475"
-                 data-ad-slot="3864003907"></ins>
+                 data-ad-slot={adConfig.slot}></ins>
           </div>
        </div>
     </div>
