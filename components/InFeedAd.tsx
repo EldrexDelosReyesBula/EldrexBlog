@@ -60,8 +60,8 @@ const InFeedAd: React.FC<InFeedAdProps> = ({ className, showBadge = true }) => {
         }
 
         for (const entry of entries) {
-            // AdSense Fluid ads generally need some width to render
-            if (entry.contentRect.width >= 200) {
+            // AdSense Fluid ads require at least 250px width
+            if (entry.contentRect.width >= 250) {
                 pushAd();
                 observer.disconnect();
                 break;
@@ -71,7 +71,7 @@ const InFeedAd: React.FC<InFeedAdProps> = ({ className, showBadge = true }) => {
 
     observer.observe(adRef.current);
 
-    if (adRef.current.offsetWidth >= 200) {
+    if (adRef.current.offsetWidth >= 250) {
         pushAd();
         observer.disconnect();
     }
