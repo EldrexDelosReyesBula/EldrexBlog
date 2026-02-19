@@ -12,7 +12,7 @@ const InFeedAd: React.FC = () => {
         setAdConfig((prev) => {
             if (prev) return prev;
             return isDesktop ? {
-                slot: "3480860525",
+                slot: "3480860525", 
                 layoutKey: "-5k+ct+1x-c7+bz"
             } : {
                 slot: "3864003907",
@@ -25,24 +25,48 @@ const InFeedAd: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (!adConfig || didInit.current || !adRef.current) return;
-    if (adRef.current.innerHTML.trim() !== "") {
-         didInit.current = true;
-         return;
+    if (!adConfig || !adRef.current) return;
+    const pushAd = () => {
+        if (!adRef.current || didInit.current) return;
+        if (adRef.current.innerHTML.trim() !== "" || adRef.current.getAttribute('data-ad-status')) {
+             didInit.current = true;
+             return;
+        }
+
+        try {
+          didInit.current = true;
+          ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+        } catch (e) {
+          if (e instanceof Error && !e.message.includes('already have ads')) {
+             console.error("AdSense Error:", e);
+          }
+        }
+    };
+    const observer = new ResizeObserver((entries) => {
+        if (didInit.current) {
+            observer.disconnect();
+            return;
+        }
+
+        for (const entry of entries) {
+            if (entry.contentRect.width >= 250) {
+                pushAd();
+                observer.disconnect();
+                break;
+            }
+        }
+    });
+
+    observer.observe(adRef.current);
+    if (adRef.current.offsetWidth >= 250) {
+        pushAd();
+        observer.disconnect();
     }
 
-    try {
-      didInit.current = true;
-      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    } catch (e) {
-      if (e instanceof Error && !e.message.includes('already have ads')) {
-         console.error("AdSense Error:", e);
-      }
-    }
+    return () => observer.disconnect();
   }, [adConfig]);
 
   if (!adConfig) {
-      // Return a skeleton placeholder matching dimensions while determining config
       return (
         <div className="flex flex-col h-full w-full min-h-[320px] sm:min-h-[380px] bg-slate-100 dark:bg-slate-800 rounded-2xl animate-pulse border border-slate-100 dark:border-slate-700" />
       );
@@ -61,7 +85,7 @@ const InFeedAd: React.FC = () => {
           <div className="flex-1 w-full h-full flex items-center justify-center bg-slate-50/50 dark:bg-slate-900/50">
               <ins className="adsbygoogle"
                  ref={adRef}
-                 style={{ display: 'block', width: '100%', height: '100%' }}
+                 style={{ display: 'block', width: '100%', height: '100%', minWidth: '250px' }}
                  data-ad-format="fluid"
                  data-ad-layout-key={adConfig.layoutKey}
                  data-ad-client="ca-pub-6548730882346475"
