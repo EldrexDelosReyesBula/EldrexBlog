@@ -51,7 +51,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <Shield size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Privacy Policy</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: February 19, 2026</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: October 2025</p>
             
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
               <p>
@@ -87,7 +87,20 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                 You have the right to opt-out of this collection via the "Settings" menu in our footer.
               </p>
 
-              <h3>2. Local Storage & Preferences</h3>
+              <h3>2. Advertising Partners</h3>
+              <p>
+                We may use third-party advertising companies (such as Google AdSense) to serve content and advertisements when you visit our website. 
+                These companies may use cookies, as noted above, to serve ads based on your prior visits to this website or other websites on the internet.
+              </p>
+              <ul>
+                  <li>
+                      <strong>Google AdSense:</strong> Google, as a third-party vendor, uses cookies to serve ads on Eldrex Writings. 
+                      Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our site and/or other sites on the Internet. 
+                      You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.
+                  </li>
+              </ul>
+
+              <h3>3. Local Storage & Preferences</h3>
               <p>
                 Instead of invasive cookies, we use your browser's <strong>Local Storage</strong> to improve your user experience. 
                 This data stays on your device and includes:
@@ -100,7 +113,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                 <li><strong>Consent Status:</strong> Remembering if you accepted or declined analytics.</li>
               </ul>
 
-              <h3>3. Third-Party Links</h3>
+              <h3>4. Third-Party Links</h3>
               <p>
                 Our website contains links to other websites (e.g., Ko-fi, GitHub, Facebook, Instagram). If you click on a third-party link, 
                 you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to 
@@ -108,7 +121,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                 or practices of any third-party sites or services.
               </p>
 
-              <h3>4. Children's Information</h3>
+              <h3>5. Children's Information</h3>
               <p>
                 We do not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child 
                 provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will do our best 
@@ -130,7 +143,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <FileText size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Terms of Use</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: February 19, 2026</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: October 2025</p>
 
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
               <p>
@@ -164,7 +177,13 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                 rootkit, or other malicious computer software.
               </p>
 
-              <h3>3. Disclaimer</h3>
+              <h3>3. Advertising & Monetization</h3>
+              <p>
+                This website uses Google AdSense to display advertisements. By using the site, you acknowledge that ads may be served by Google and other third-party vendors. 
+                We are not responsible for the content, accuracy, or products advertised in these third-party ads. Interaction with any advertisement is at your own discretion and risk.
+              </p>
+
+              <h3>4. Disclaimer</h3>
               <div className="bg-amber-50 dark:bg-amber-900/10 p-5 rounded-lg border-l-4 border-amber-500 not-prose my-6">
                 <p className="text-slate-700 dark:text-slate-200 text-sm m-0">
                   The information provided on this blog is for general informational and educational purposes only. It reflects the personal 
@@ -173,14 +192,14 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                 </p>
               </div>
 
-              <h3>4. External Links</h3>
+              <h3>5. External Links</h3>
               <p>
                 From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality 
                 links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites 
                 do not imply a recommendation for all the content found on these sites.
               </p>
 
-              <h3>5. Changes to These Terms</h3>
+              <h3>6. Changes to These Terms</h3>
               <p>
                 We reserve the right to revise these terms and conditions at any time. By using this website, you are expected to review these terms 
                 on a regular basis.
@@ -239,6 +258,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                   <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Judgement Where I Began to Change</li>
                   <li className="flex items-start gap-2"><span className="text-ember-500">•</span> When Doubt Walks Beside Me</li>
                   <li className="flex items-start gap-2"><span className="text-ember-500">•</span> The Space I Need</li>
+                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> The Teacher Who Taught Me to Rise</li>
                 </ul>
               </div>
 
