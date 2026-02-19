@@ -485,5 +485,35 @@ export const BLOG_POSTS: BlogPost[] = [
       
       <p>In conclusion, being the last presenter is not a curse, but a challenge that highlights areas for personal growth. Fear, shyness, and pressure are natural human experiences, especially in public speaking. Progress is defined not by the absence of fear, but by the decision to speak despite it. With understanding, patience, and the right mindset, even the most anxious presenter can learn to stand, speak, and finish with quiet confidence. Being the last presenter is not about ending the discussion—it is about proving to oneself that growth is possible under pressure.</p>
     `
+},
+{
+    id: 22,
+    title: "The Teacher Who Taught Me to Rise",
+    image: BASE_IMAGE_URL + "post/The Teacher Who Taught Me to Rise.jpg",
+    placeholderImage: getPlaceholder(22),
+    date: "February 19, 2026",
+    category: "Personal Growth",
+    excerpt: "A reflection on how a strict teacher transformed fear, embarrassment, and self-doubt into confidence and personal growth.",
+    content: `
+      <p>When I was in Grade 11, I met a teacher who changed the way I looked at learning and life. His name was Sir Cyril, my teacher in Oral Communication. At first, I honestly disliked him. He corrected me in front of my classmates whenever I made mistakes. Every word I mispronounced, every uncertain tone, and every awkward movement while speaking did not escape his attention. It made me feel exposed and uncomfortable. I thought he was too strict, and I even told myself that I would never enjoy his class.</p>
+
+      <p>Each time I stood in front of the class, my hands would shake and my voice would tremble. When he pointed out my mistakes, some of my classmates would laugh, and I would wish the floor would swallow me. Slowly, I began to lose confidence. I started believing that maybe I was not meant to speak in front of people. Yet despite the embarrassment, a part of me kept listening. Even when his words felt harsh, they stayed with me. I did not realize it then, but he was not tearing me down. He was building me up.</p>
+
+      <p>As days passed, I began to understand him better. He was not trying to humiliate me. He was pushing me to confront my fears. His lessons were never just about grammar, pronunciation, or posture. They were about courage and believing that my voice deserved to be heard. One day, while practicing a speech, I remembered him saying, "Make your words sound alive." That simple advice changed something in me. I stopped focusing on avoiding mistakes and started focusing on expressing meaning.</p>
+
+      <p>The next time we had a reporting activity, I raised my hand. My heart was still pounding, but I chose to speak anyway. I noticed a small smile on his face, and that quiet acknowledgment gave me strength. I still made mistakes, but this time, I did not freeze. I breathed, paused, and continued. For the first time, I felt that I was not just speaking. I was growing.</p>
+
+      <p>I also remember when our group leader became frustrated because I could not answer a question during a presentation. I felt embarrassed again, but this time I responded differently. Instead of shrinking, I reflected. I told myself that failure is not the end. It is the beginning of improvement. That mindset helped me move forward instead of staying stuck in shame.</p>
+
+      <p>Looking back, I am grateful for Sir Cyril and for teachers who challenge their students beyond comfort. Sometimes, the strictest teachers are the ones who care the most. They see potential that we cannot yet recognize in ourselves. They demand more because they believe we are capable of more.</p>
+
+      <p>Today, the way I speak, the way I face people, and the way I handle correction all trace back to his influence. His voice still echoes in my mind whenever I prepare to present or share my thoughts. If I had the chance, I would thank him. I would tell him that his discipline gave me confidence, and his criticism gave me strength.</p>
+
+      <p>Teachers are like sculptors. They shape us carefully, sometimes firmly, removing our rough edges so we can discover who we are meant to become. The process may feel uncomfortable, even painful, but it prepares us to shine.</p>
+
+      <p><strong>A strict teacher may not always smile, but their lessons leave marks that time can never erase.</strong></p>
+
+      <p>Through his strictness, I learned respect. Through his corrections, I gained confidence. And through his guidance, I learned that every failure is simply another step toward growth. Sir Cyril did not only teach me how to speak. He taught me how to rise.</p>
+    `
 }
 ];
