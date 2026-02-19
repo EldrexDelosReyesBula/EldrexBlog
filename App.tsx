@@ -12,6 +12,7 @@ import ConsentModal from './components/ConsentModal';
 import SettingsModal from './components/SettingsModal';
 import SupportBanner from './components/SupportBanner';
 import StaticPage, { PageType } from './components/StaticPage';
+import InFeedAd from './components/InFeedAd';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Sparkles, BookOpen } from 'lucide-react';
 import { Analytics } from "@vercel/analytics/react";
@@ -57,6 +58,35 @@ const App: React.FC = () => {
   const handleOpenPreferences = () => {
      setSettingsOpen(true);
   };
+
+  // Keyboard Navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ignore if input/textarea is focused
+      if (['INPUT', 'TEXTAREA'].includes((document.activeElement as HTMLElement).tagName)) return;
+
+      if (e.key === 'ArrowLeft') {
+        if (currentPage > 1) {
+            handlePageChange(currentPage - 1);
+        }
+      } else if (e.key === 'ArrowRight') {
+        if (currentPage < totalPages) {
+            handlePageChange(currentPage + 1);
+        }
+      } else if (e.key === 'Escape') {
+        if (selectedPostId) {
+            handleCloseModal();
+        } else if (settingsOpen) {
+            setSettingsOpen(false);
+        } else if (currentView !== 'home') {
+            handleNavigate('home');
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentPage, selectedPostId, settingsOpen, currentView]);
 
   // Simulate initial data load animation
   useEffect(() => {
@@ -218,12 +248,15 @@ const App: React.FC = () => {
                   ))
                 ) : currentPosts.length > 0 ? (
                   currentPosts.map((post, index) => (
-                    <BlogCard 
-                      key={post.id} 
-                      post={post} 
-                      onClick={handlePostClick} 
-                      index={index} 
-                    />
+                    <React.Fragment key={post.id}>
+                      <BlogCard 
+                        post={post} 
+                        onClick={handlePostClick} 
+                        index={index} 
+                      />
+                      {/* Inject Ad after 3rd item */}
+                      {index === 2 && <InFeedAd />}
+                    </React.Fragment>
                   ))
                 ) : (
                   <motion.div 
@@ -250,7 +283,7 @@ const App: React.FC = () => {
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
-                  className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-ember-200 hover:text-ember-600 dark:hover:text-ember-400 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm hover:shadow"
+                  className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-ember-200 hover:text-ember-600 dark:hover:text-ember-400 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-ember-500"
                   aria-label="Previous page"
                 >
                   <ChevronLeft size={20} />
@@ -260,7 +293,7 @@ const App: React.FC = () => {
                   <button
                     key={page}
                     onClick={() => handlePageChange(page)}
-                    className={`w-11 h-11 rounded-xl text-sm font-bold transition-all transform active:scale-95 ${
+                    className={`w-11 h-11 rounded-xl text-sm font-bold transition-all transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-ember-500 ${
                       currentPage === page
                         ? 'bg-ember-600 text-white shadow-lg shadow-ember-200 dark:shadow-none ring-2 ring-ember-100 dark:ring-ember-900'
                         : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-ember-200 hover:text-ember-600 dark:hover:text-ember-400 shadow-sm hover:shadow'
@@ -273,7 +306,7 @@ const App: React.FC = () => {
                 <button
                   onClick={() => handlePageChange(currentPage + 1)}
                   disabled={currentPage === totalPages}
-                  className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-ember-200 hover:text-ember-600 dark:hover:text-ember-400 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm hover:shadow"
+                  className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-ember-200 hover:text-ember-600 dark:hover:text-ember-400 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-ember-500"
                   aria-label="Next page"
                 >
                   <ChevronRight size={20} />
