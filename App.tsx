@@ -210,22 +210,50 @@ const App: React.FC = () => {
             exit={{ opacity: 0 }}
             className="flex-grow pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full"
           >
-            {/* Page Title Section */}
-            <div className="text-center mb-16 sm:mb-20">
+            {/* Hero Section with GIF */}
+            <div className="relative mb-16 sm:mb-24">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="relative w-full overflow-hidden rounded-[2.5rem] bg-slate-900 shadow-2xl min-h-[400px] sm:min-h-[500px] flex items-center justify-center isolate border border-slate-800"
               >
-                <span className="inline-block py-1 px-3 rounded-full bg-ember-100 dark:bg-ember-900/30 text-ember-700 dark:text-ember-300 text-xs font-bold uppercase tracking-wider mb-4 border border-ember-200 dark:border-ember-800">
-                  Personal Blog
-                </span>
-                <h2 className="text-5xl sm:text-6xl md:text-7xl font-serif font-medium text-slate-900 dark:text-slate-50 mb-6 tracking-tight">
-                  Thoughts & <span className="text-ember-600 dark:text-ember-500 italic">Reflections</span>
-                </h2>
-                <p className="text-lg sm:text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed font-light">
-                  Exploring the intersection of humanity, technology, and personal growth through stories and experiences.
-                </p>
+                {/* Background GIF */}
+                <div className="absolute inset-0 z-0 select-none">
+                    <img 
+                        src="https://eldrex.landecs.org/post/hero.gif" 
+                        alt="Hero Background" 
+                        className="w-full h-full object-cover opacity-60 dark:opacity-40 transform scale-105"
+                    />
+                    {/* Professional Overlay System */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/60 to-slate-900/90 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-slate-900/10 backdrop-blur-[2px]" />
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto py-20">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.8 }}
+                    >
+                        <div className="flex justify-center mb-8">
+                            <span className="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white/90 text-xs font-bold uppercase tracking-[0.25em] shadow-lg">
+                                <span className="w-1.5 h-1.5 rounded-full bg-ember-500 shadow-[0_0_10px_rgba(249,115,22,0.5)] animate-pulse" />
+                                Personal Blog
+                            </span>
+                        </div>
+                        
+                        <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 tracking-tight leading-none drop-shadow-xl">
+                          Thoughts & <br className="hidden sm:block" />
+                          <span className="text-transparent bg-clip-text bg-gradient-to-r from-ember-200 via-orange-100 to-white italic">Reflections</span>
+                        </h2>
+                        
+                        <p className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed font-light tracking-wide drop-shadow-md opacity-90">
+                          Exploring the intersection of humanity, technology, and personal growth through stories and experiences.
+                        </p>
+                    </motion.div>
+                </div>
               </motion.div>
             </div>
 
@@ -327,29 +355,37 @@ const App: React.FC = () => {
                 </div>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                  {popularPosts.map(post => (
-                    <motion.div 
-                      whileHover={{ y: -4 }}
-                      key={post.id}
-                      onClick={() => handlePostClick(post.id)}
-                      className="group cursor-pointer flex gap-4 items-center bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-ember-200 dark:hover:border-ember-700 hover:shadow-lg hover:shadow-ember-100/50 dark:hover:shadow-none transition-all duration-300"
-                    >
-                      <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100 dark:bg-slate-700 relative">
-                        <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10"/>
-                        <img 
-                          src={post.image || post.placeholderImage} 
-                          alt={post.title} 
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
-                        />
-                      </div>
-                      <div>
-                        <span className="text-[10px] font-extrabold text-ember-600 dark:text-ember-400 uppercase tracking-widest">{post.category}</span>
-                        <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-ember-700 dark:group-hover:text-ember-400 transition-colors line-clamp-2 mt-1.5 leading-snug">
-                          {post.title}
-                        </h4>
-                        <div className="mt-2 text-xs text-slate-400 dark:text-slate-500 font-medium">{post.date}</div>
-                      </div>
-                    </motion.div>
+                  {popularPosts.map((post, idx) => (
+                    <React.Fragment key={post.id}>
+                      <motion.div 
+                        whileHover={{ y: -4 }}
+                        onClick={() => handlePostClick(post.id)}
+                        className="group cursor-pointer flex gap-4 items-center bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-ember-200 dark:hover:border-ember-700 hover:shadow-lg hover:shadow-ember-100/50 dark:hover:shadow-none transition-all duration-300 h-full"
+                      >
+                        <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100 dark:bg-slate-700 relative">
+                          <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10"/>
+                          <img 
+                            src={post.image || post.placeholderImage} 
+                            alt={post.title} 
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                          />
+                        </div>
+                        <div>
+                          <span className="text-[10px] font-extrabold text-ember-600 dark:text-ember-400 uppercase tracking-widest">{post.category}</span>
+                          <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-ember-700 dark:group-hover:text-ember-400 transition-colors line-clamp-2 mt-1.5 leading-snug">
+                            {post.title}
+                          </h4>
+                          <div className="mt-2 text-xs text-slate-400 dark:text-slate-500 font-medium">{post.date}</div>
+                        </div>
+                      </motion.div>
+                      
+                      {/* Inject Ad after 2nd popular story */}
+                      {idx === 1 && (
+                         <div className="h-full">
+                           <InFeedAd className="min-h-[140px] h-full" showBadge={true} />
+                         </div>
+                      )}
+                    </React.Fragment>
                   ))}
                 </div>
               </div>
