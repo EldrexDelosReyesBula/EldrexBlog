@@ -1,7 +1,7 @@
 {
   "name": "eldrex-writings",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,17 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "framer-motion": "^11.3.24",
-    "lucide-react": "^0.424.0",
-    "@vercel/analytics": "^1.4.1"
+    "react": "18.3.1",
+    "react-dom": "^19.2.4",
+    "lucide-react": "0.424.0",
+    "framer-motion": "11.3.24",
+    "@vercel/analytics": "^1.6.1"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.1"
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   }
 }
