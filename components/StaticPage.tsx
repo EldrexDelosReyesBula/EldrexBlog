@@ -51,7 +51,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <Shield size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Privacy Policy</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: October 2025</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: February 19, 2026</p>
             
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
               <p>
@@ -130,7 +130,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <FileText size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Terms of Use</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: October 2025</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: February 19, 2026</p>
 
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
               <p>
