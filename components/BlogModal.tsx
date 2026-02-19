@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowLeft, Share2, Calendar, Tag, ChevronUp, Coffee, BookOpen, Clock, Check } from 'lucide-react';
 import { BlogPost } from '../types';
 import { BLOG_POSTS } from '../data';
+import InFeedAd from './InFeedAd';
 
 interface BlogModalProps {
   post: BlogPost | null;
@@ -190,27 +191,30 @@ const BlogModal: React.FC<BlogModalProps> = ({ post, onClose, onSelectPost }) =>
                      Related Posts
                    </h3>
                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                     {recommendations.map(rec => (
-                       <div 
-                         key={rec.id} 
-                         onClick={() => handleRecommendationClick(rec.id)}
-                         className="group cursor-pointer flex flex-col h-full"
-                       >
-                         <div className="h-40 overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 mb-4 border border-slate-100 dark:border-slate-700 relative">
-                           <img 
-                             src={rec.image || rec.placeholderImage} 
-                             alt={rec.title}
-                             className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                           />
-                           <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors" />
-                         </div>
-                         <div className="flex flex-col flex-grow">
-                             <span className="text-[10px] font-bold text-ember-600 dark:text-ember-400 uppercase tracking-widest mb-2">{rec.category}</span>
-                             <h4 className="text-sm font-bold font-serif text-slate-900 dark:text-slate-100 group-hover:text-ember-700 dark:group-hover:text-ember-400 transition-colors leading-snug line-clamp-2">
-                                {rec.title}
-                             </h4>
-                         </div>
-                       </div>
+                     {recommendations.map((rec, idx) => (
+                       <React.Fragment key={rec.id}>
+                          <div 
+                            onClick={() => handleRecommendationClick(rec.id)}
+                            className="group cursor-pointer flex flex-col h-full"
+                          >
+                            <div className="h-40 overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800 mb-4 border border-slate-100 dark:border-slate-700 relative">
+                              <img 
+                                src={rec.image || rec.placeholderImage} 
+                                alt={rec.title}
+                                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                              />
+                              <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors" />
+                            </div>
+                            <div className="flex flex-col flex-grow">
+                                <span className="text-[10px] font-bold text-ember-600 dark:text-ember-400 uppercase tracking-widest mb-2">{rec.category}</span>
+                                <h4 className="text-sm font-bold font-serif text-slate-900 dark:text-slate-100 group-hover:text-ember-700 dark:group-hover:text-ember-400 transition-colors leading-snug line-clamp-2">
+                                  {rec.title}
+                                </h4>
+                            </div>
+                          </div>
+                          {/* Inject Ad after 2nd related post */}
+                          {idx === 1 && <InFeedAd className="h-full min-h-[200px]" />}
+                       </React.Fragment>
                      ))}
                    </div>
                 </div>
