@@ -515,5 +515,33 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p>Through his strictness, I learned respect. Through his corrections, I gained confidence. And through his guidance, I learned that every failure is simply another step toward growth. Sir Cyril did not only teach me how to speak. He taught me how to rise.</p>
     `
+},
+{
+    id: 23,
+    title: "When “Yes” Was the Wrong Answer",
+    image: BASE_IMAGE_URL + "post/When Yes Was the Wrong Answer.gif",
+    placeholderImage: getPlaceholder(23),
+    date: "February 20, 2026",
+    category: "Personal Growth",
+    excerpt: "A reflection on my first debate experience in Oral Communication and how one simple word taught me the true meaning of preparation and presence of mind.",
+    content: `
+      <p>One of the most unforgettable experiences I had in Grade 11 happened during our <strong>Oral Communication</strong> class. We were assigned to participate in a formal debate, and the topic centered on extrajudicial killings during the administration of <underline><a href="https://en.wikipedia.org/wiki/Rodrigo_Duterte" target="_blank">Rodrigo Duterte</a></underline>. I was part of the negative side, tasked to defend a position I barely understood at the time.</p>
+
+      <p>Everything was going smoothly until my opponent asked me a question that ended with “right?” Without thinking carefully, I responded with a quick <strong>“Yes.”</strong> The moment I said it, I realized I had just agreed with the argument I was supposed to oppose. My mind froze. Time suddenly felt faster than my thoughts, and I could not recover. I stood there in silence, stuck between panic and regret.</p>
+
+      <blockquote><p><italic>Sometimes, the smallest word can carry the biggest consequence.</italic></p></blockquote>
+
+      <p>At that time, fear completely took over. I did not understand how debates were structured. I did not know that in formal argumentation, you are not required to answer with a simple yes or no. You can clarify, redirect, or challenge the premise of the question. Instead, I treated it like a casual conversation and walked straight into a trap.</p>
+
+      <p>Looking back now, I can laugh at that moment. What once felt embarrassing has become one of the funniest memories of my senior high school years. But beyond the laughter, that experience taught me something important. <strong>Communication is not just about speaking quickly; it is about thinking critically under pressure.</strong></p>
+
+      <p>That debate revealed my weaknesses. I lacked preparation. I lacked strategy. Most of all, I lacked confidence. Yet it also revealed something else: growth begins where comfort ends. Failing in that moment did not define my ability to speak. Instead, it exposed the areas I needed to improve.</p>
+
+      <blockquote><p><italic>I may have lost my words that day, but I gained awareness that will stay with me far longer than the silence ever did.</italic></p></blockquote>
+
+      <p>Today, I no longer see that debate as a failure. I see it as a lesson. It taught me to think before responding, to understand the structure of arguments, and to never let pressure control my voice. Most importantly, it reminded me that mistakes are not the end of confidence; they are the beginning of mastery.</p>
+
+      <p>That Grade 11 debate may have silenced me in the moment, but it strengthened my voice for the future.</p>
+    `
 }
 ];
