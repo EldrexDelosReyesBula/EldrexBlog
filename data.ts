@@ -579,7 +579,7 @@ export const BLOG_POSTS: BlogPost[] = [
 {        
 id: 25,        
 title: "Mathematics, Life, and the Balance Between Easy and Hard",        
-image: BASE_IMAGE_URL + "post/Mathematics Life and the Balance.jpg",        
+image: BASE_IMAGE_URL + "post/Mathematics, Life, and the Balance Between Easy and Hard.gif",        
 placeholderImage: getPlaceholder(23),        
 date: "February 21, 2026",        
 category: "Personal Growth",        
