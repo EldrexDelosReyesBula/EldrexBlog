@@ -640,7 +640,7 @@ content:   `
 {
   id: 26,
   title: "Why Not You: A Personal Reflection on Courage and Action",
-  image: "post/Why Not You.gif",
+  image: "post/Why%20Not%20You.gif",
   placeholderImage: getPlaceholder(26),
   date: "February 22, 2026",
   category: "Inspiration",
