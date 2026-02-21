@@ -580,7 +580,7 @@ export const BLOG_POSTS: BlogPost[] = [
 id: 25,        
 title: "Mathematics, Life, and the Balance Between Easy and Hard",        
 image: BASE_IMAGE_URL + "post/Mathematics, Life, and the Balance Between Easy and Hard.gif",        
-placeholderImage: getPlaceholder(23),        
+placeholderImage: getPlaceholder(25),        
 date: "February 21, 2026",        
 category: "Personal Growth",        
 excerpt: "A reflection on how lessons in mathematics mirror the choices, failures, and strategies we face in life.",        
@@ -635,6 +635,52 @@ content:   `
 <p>Mathematics is not just numbers. It is discipline. It is logic. It is cause and effect. If today is easy because I avoided effort, tomorrow will be hard. If today is hard because I chose growth, tomorrow becomes easier. If I fail, I must analyze. If I want change, I must adjust the formula. If I want peace, I must prepare.</p>
 
 <p>Life gives freedom, but freedom always carries responsibility. Maybe that is what my professor really meant. Not that difficulty automatically follows ease. Not that suffering guarantees comfort. But that our choices today are variables. And tomorrow is the result. And just like in mathematics, the result depends on how we solve the problem.</p>
+`
+},
+{
+  id: 26,
+  title: "Why Not You: A Personal Reflection on Courage and Action",
+  image: "https://www.youtube.com/embed/FGPbMHeZ-7g",
+  placeholderImage: getPlaceholder(26),
+  date: "February 22, 2026",
+  category: "Inspiration",
+  excerpt: "A personal reflection about courage, self-doubt, and the powerful question: Why not you?",
+  content: `
+<p>I came across this powerful video on <u><a href="https://youtu.be/FGPbMHeZ-7g?si=GHs4DRbHax1U_-Bt" target="_blank">YouTube</a></u> titled <strong><italic>“Why Not You”</italic></strong>. At first, it sounded like a simple motivational message. But as I continued watching, I realized it was more than that. It felt personal. It felt direct. It felt like the speaker was asking me the question face to face.</p>
+
+<p>The line that stayed with me the most was:</p>
+
+<blockquote>
+<strong>“Why not you?”</strong> — from the video <italic>Why Not You</italic>
+</blockquote>
+
+<p>This question may look small, but it carries a heavy meaning. Most of the time, when we see successful people, we think they are different. We think they are more talented, more lucky, more prepared. We rarely stop and ask ourselves if we can also be in that position. The video challenges that mindset. It pushes us to rethink our excuses.</p>
+
+<p>As I reflected deeper, I realized how often fear controls my decisions. Fear of failing. Fear of being judged. Fear of not being enough. The video clearly highlights that growth does not happen inside comfort. It reminds us that success requires stepping forward even when we feel unsure.</p>
+
+<blockquote>
+<strong>“You have to believe it’s possible for you.”</strong> — from the video <italic>Why Not You</italic>
+</blockquote>
+
+<p>This message hit me personally. Belief is not just about positive thinking. It is about action. It is about waking up and choosing to try again. Sometimes, I wait for the perfect time. I wait for more skills, more confidence, more approval. But the truth is, the perfect time may never come. The video made me realize that waiting is sometimes just another form of fear.</p>
+
+<p>Another strong idea in the video talks about ownership of our life. No one else will push our dreams for us. No one else will carry our responsibilities. If I want something better, I must work for it. I must accept that the journey will not be easy, and that discomfort is part of growth.</p>
+
+<blockquote>
+<strong>“If someone else can do it, why can’t you?”</strong> — from the video <italic>Why Not You</italic>
+</blockquote>
+
+<p>This line made me think about comparison. Instead of comparing myself in a negative way, maybe I should use comparison as motivation. If another human being can rise, then maybe I can too. We are all imperfect. We all struggle. The only difference is who decides to keep going.</p>
+
+<p>Watching this video did not magically change my life. But it changed my thinking. And sometimes, that is where real change starts. It reminded me that my dreams are not impossible. They are just waiting for courage. It reminded me that self-doubt is loud, but belief can be louder if I allow it.</p>
+
+<p>So now, when I feel small or uncertain, I return to that simple but powerful question:</p>
+
+<blockquote>
+<strong>“Why not you?”</strong> — from the video <italic>Why Not You</italic>
+</blockquote>
+
+<p>And instead of finding excuses, I try to find reasons to move forward. Because maybe the only thing standing between me and my next level is the decision to believe that I am capable too.</p>
 `
 }
 ];
