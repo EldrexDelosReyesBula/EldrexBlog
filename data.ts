@@ -91,7 +91,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
       id: 5,
       title: "If You Have Time to Sit",
-      image: BASE_IMAGE_URL + "post/If You Have Time to Sit.png",
+      image: BASE_IMAGE_URL + "post/If You Have Time to Sit.gif",
       placeholderImage: getPlaceholder(5),
       date: "October 18, 2025",
       category: "Productivity",
@@ -640,7 +640,7 @@ content:   `
 {
   id: 26,
   title: "Why Not You: A Personal Reflection on Courage and Action",
-  image: "https://www.youtube.com/embed/FGPbMHeZ-7g",
+  image: "post/Why Not You.gif",
   placeholderImage: getPlaceholder(26),
   date: "February 22, 2026",
   category: "Inspiration",
