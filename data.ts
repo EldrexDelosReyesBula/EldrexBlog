@@ -712,5 +712,35 @@ content:   `
 
 <p><strong>LanDecs is more than a company or a tool.</strong> It is the story of a child who dared to dream despite challenges, who worked tirelessly, and who believed that small steps could lead to meaningful change. Every line of code, every project, and every tool carries a piece of that journey—one that I hope inspires others to keep pushing, learning, and creating, no matter the obstacles.</p>
 `
+},
+{
+id: 28,
+title: "See Me After You",
+image: BASE_IMAGE_URL + "post/See Me After You.jpg",
+placeholderImage: getPlaceholder(28),
+date: "February 23, 2026",
+category: "Leadership",
+excerpt: "A reflection on leadership, responsibility, and the hard lessons learned when initiative is tested under pressure.",
+content:   `
+<p><strong>Leadership</strong> is one of the most challenging roles in any group, whether in activities, projects, or collaborative work. I say this not because I read it somewhere, but because I have lived it. Being a leader is not just about giving instructions. It is about carrying responsibility, managing pressure, and sometimes finishing the work when others choose not to move.</p>
+
+<p>As a <em>working student</em> and an aspiring entrepreneur, I have handled teams with different mindsets, skills, and levels of commitment. At first, I believed leadership was simple: give clear instructions, provide complete information, set deadlines, and allow questions. I thought structure alone would guarantee action. I was wrong.</p>
+
+<p>There was a time when I assigned tasks that I had already completed myself. I knew they might struggle, but I wanted to test their initiative. I gave proper instructions, a clear timespan, due dates, and resources they could use. I even made myself available for clarification. Days passed. Then a week passed. Nothing happened. Despite reminders, there was no visible progress.</p>
+
+<p>On the day of our presentation, we only had a few hours before class began. Suddenly, the group chat became active. Messages were everywhere. They were asking what to do, how to start, and what their roles were. Ironically, I was busy uploading the finished project to <u><a href="https://github.com" target="_blank">GitHub</a></u> and preparing the web application link for submission.</p>
+
+<p>The truth is, I had already completed the project before giving them their tasks. I did not announce it. I wanted to see who would step up. It may seem harsh. It may seem unfair. But leadership sometimes means preparing for failure while hoping others will choose growth.</p>
+
+<p>When they asked me inside the room what they could do, I realized something deeper. Many people wait for pressure before they act. They wait for fear. They wait for urgency. But growth does not begin with waiting. It begins with movement.</p>
+
+<blockquote>
+<p><strong>All of us do not know what to do unless we start doing it.</strong> We must accept the possibility of failure, show that we are capable, and prove that we are willing to learn. <em>No one truly understands anything unless they act toward it.</em></p>
+</blockquote>
+
+<p>This experience taught me that <strong>action creates clarity</strong>. Responsibility builds character. Initiative separates leaders from followers. Sometimes you carry the team. Sometimes you allow them to feel the consequences of inaction. Both are lessons.</p>
+
+<p>Leadership is difficult. It tests your patience. It challenges your mindset. But in that difficulty, you grow. And sometimes, before others ask what to do, you quietly finish what needs to be done.</p>
+`
 }
 ];
