@@ -682,5 +682,35 @@ content:   `
 
 <p>And instead of finding excuses, I try to find reasons to move forward. Because maybe the only thing standing between me and my next level is the decision to believe that I am capable too.</p>
 `
+},
+{
+  id: 27,
+  title: "The Day I Started LanDecs",
+  image: BASE_IMAGE_URL + "post/The Day I Started LanDecs.jpg",
+  placeholderImage: getPlaceholder(27),
+  date: "February 22, 2026",
+  category: "Inspiration, Entrepreneurship, Personal Growth",
+  excerpt: "The story of Eldrex Delos Reyes Bula and how LanDecs started as a silent journey of resilience and innovation.",
+  content: `
+<p>I grew up as a child with a dream I could not fully name, a dream bigger than my circumstances. While other children played, I watched them and asked myself, <strong>"What can I do differently? How can I create something meaningful?"</strong></p>
+
+<p>Life at home was not easy. We lived in a line of poverty, and even though my family worked hard every day, it seemed like nothing changed.</p>
+
+<p>I was very close to my mother. I went with her everywhere—whether she was working, farming, or going into the forest. I would ask her every day why we struggled so much despite our hard work. She would tell me, <blockquote><em>"Because we need to live, and even if it seems like we are not moving forward, at least we are still alive."</em></blockquote> Even as a child, I began to understand the value of hard work and the reality that effort alone does not always guarantee success.</p>
+
+<p>I loved to help. Some people would say I was different, maybe even criticize me, because I was better at keeping our home clean than my siblings. I never minded. I told myself, <strong><em>"If you can do it today, do it. If you cannot do everything, do what you can. And if one day you fail, find a way to do things differently."</em></strong></p>
+
+<p>School was a daily challenge. To get there, I had to row a boat back and forth, sometimes getting soaked, sometimes covered in mud. On some days, commercial boats would pass by, and our small boat nearly capsized. On top of this, I faced constant bullying from classmates. It hurt deeply, and at times even teachers laughed at me while I tried to sing the national anthem <strong><em>(Lupang Hinirang)</em></strong> with a runny nose. I could not join school events like Christmas parties or Boy Scouts because my parents could not afford the fees or contributions. I refused to burden them.</p>
+
+<p>At the age of twelve, I separated from my family to work for my aunt, who had some means but did not understand respect or family values. I worked for over three years with a small monthly salary of 1,000 pesos, doing multitasking jobs—from household chores to helping in her electronics shop—all while continuing my studies in Grade 8.</p>
+
+<p>By the age of thirteen, I began to dream differently. I wanted to enter an entrepreneurial journey. I started with the concept of <strong>LawDrex</strong>, imagining a focus on space exploration. Later, I evolved the idea into <strong>LanDex</strong>, focusing on mobile phones and car automation. These ideas became my focus throughout 2019.</p>
+
+<p>In 2020, I formally created <strong>LanDecs</strong>, shifting focus toward software and web application development. I started small with personal projects that helped me study and work efficiently. I shared these projects with friends, and gradually, LanDecs grew into a platform that helps students, professionals, and educators work more efficiently. Even though I kept everything a secret, not sharing my progress with anyone—including my family—I felt proud that my work could speak for itself.</p>
+
+<p>Today, LanDecs continues to build tools and platforms that are free, easy to use, and without ads. While I may not earn as much as I once imagined, the satisfaction comes from helping people move forward, see possibilities, and experience platforms that are simple and accessible.</p>
+
+<p><strong>LanDecs is more than a company or a tool.</strong> It is the story of a child who dared to dream despite challenges, who worked tirelessly, and who believed that small steps could lead to meaningful change. Every line of code, every project, and every tool carries a piece of that journey—one that I hope inspires others to keep pushing, learning, and creating, no matter the obstacles.</p>
+`
 }
 ];
