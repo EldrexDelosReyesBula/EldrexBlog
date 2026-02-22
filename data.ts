@@ -689,7 +689,7 @@ content:   `
   image: BASE_IMAGE_URL + "post/The Day I Started LanDecs.jpg",
   placeholderImage: getPlaceholder(27),
   date: "February 22, 2026",
-  category: "Inspiration, Entrepreneurship, Personal Growth",
+  category: "Entrepreneurship",
   excerpt: "The story of Eldrex Delos Reyes Bula and how LanDecs started as a silent journey of resilience and innovation.",
   content: `
 <p>I grew up as a child with a dream I could not fully name, a dream bigger than my circumstances. While other children played, I watched them and asked myself, <strong>"What can I do differently? How can I create something meaningful?"</strong></p>
