@@ -742,5 +742,63 @@ content:   `
 
 <p>Leadership is difficult. It tests your patience. It challenges your mindset. But in that difficulty, you grow. And sometimes, before others ask what to do, you quietly finish what needs to be done.</p>
 `
+},
+{
+id: 29,
+title: "Enough, But Still Not Enough",
+image: BASE_IMAGE_URL + "post/Enough But Still Not Enough.jpg",
+placeholderImage: getPlaceholder(29),
+date: "February 24, 2026",
+category: "Reflection",
+excerpt: "There are nights when I look at the moon and question myself if I am truly enough. Dreams are heavy, comparisons are louder, and discipline feels far away. But maybe being enough is not about achieving everything, it is about continuing even when you doubt yourself.",
+content:   `
+
+<p><strong>Enough, But Still Not Enough</strong></p>
+
+<p>There are nights when I stare at the moon and quietly ask for something that will finally make me feel <em>enough</em>. I look at the stars and wait for one to fall, believing that maybe I can whisper a wish into the dark and it will come true. When I was younger, I believed that if you saw a falling star and made a wish, the universe would give it to you. Maybe I learned it from movies. Maybe I just wanted something magical to hold on to.</p>
+
+<blockquote>
+<p><em>Wishing is easy. Becoming is hard.</em></p>
+</blockquote>
+
+<p>I used to tell myself that I am enough. But deep inside, it still feels like <u>not enough</u>. Because how can you feel complete when your dreams are still waiting? How can you feel whole when the version of yourself you imagine has not yet arrived?</p>
+
+<p>Dreams are beautiful, but they can also become heavy. When you have too many dreams and too little discipline, they begin to pile up inside you. They stop inspiring you and start pressuring you. You feel full, but not fulfilled. You feel busy, but not progressing.</p>
+
+<p>Slowly, fear begins to grow. Fear of starting again. Fear of failing again. Fear of proving to yourself that maybe you are not capable.</p>
+
+<p>As a working student, there are days I wish I had more hands to finish every task, more brain power to understand everything quickly, more strength so I would not feel tired. I imagine what it would be like to have superpowers just to survive the weight of responsibilities. It is exhausting to think that I must do all of this with only what I have.</p>
+
+<blockquote>
+<p><strong>Sometimes dreams feel too big for the person you are right now.</strong></p>
+</blockquote>
+
+<p>And when something feels too big, the easiest reaction is to step back instead of step forward. But maybe the problem is not the size of the dream. Maybe it is the way we look at it.</p>
+
+<p>There was a time I compared myself to everyone around me. I saw how fast they answered questions. How confident they spoke. How intelligent they seemed. I wished I was like them. I wanted to be the smartest in the room so people would admire me. So people would choose me. So people would love me.</p>
+
+<p>But no matter how much you compare, you will never become them. And that is not a failure. That is the truth.</p>
+
+<blockquote>
+<p><em>You will not be them. You will always be yourself.</em></p>
+</blockquote>
+
+<p>Trying to copy someone else's strengths will not give you their identity. It will only make you lose your own. The real growth begins when you stop chasing who they are and start building who you are.</p>
+
+<p><strong>Enough</strong> does not mean you have achieved everything. It means you are willing to work with what you have. It means you accept opportunities that help you grow, even if they scare you. It means you choose discipline over excuses. It means you move, even when you feel small.</p>
+
+<p>You may not be the smartest in the room. You may not be the fastest learner. You may not be the most talented. But doing the right things consistently will take you further than talent without effort.</p>
+
+<blockquote>
+<p><strong>Someone who struggled and still continued. Someone who doubted and still tried. Someone who felt not enough, but kept going anyway.</strong></p>
+</blockquote>
+
+<p>And maybe one day, when you look at the moon again, you will realize something.</p>
+
+<p><u>You were never waiting for a star to fall.</u></p>
+
+<p><strong>You were becoming one.</strong></p>
+
+`
 }
 ];
