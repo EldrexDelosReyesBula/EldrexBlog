@@ -683,35 +683,33 @@ content:   `
 <p>And instead of finding excuses, I try to find reasons to move forward. Because maybe the only thing standing between me and my next level is the decision to believe that I am capable too.</p>
 `
 },
-{
-  id: 27,
-  title: "The Day I Started LanDecs",
-  image: BASE_IMAGE_URL + "post/The Day I Started LanDecs.jpg",
-  placeholderImage: getPlaceholder(27),
-  date: "February 22, 2026",
-  category: "Entrepreneurship",
-  excerpt: "The story of Eldrex Delos Reyes Bula and how LanDecs started as a silent journey of resilience and innovation.",
-  content: `
-<p>I grew up as a child with a dream I could not fully name, a dream bigger than my circumstances. While other children played, I watched them and asked myself, <strong>"What can I do differently? How can I create something meaningful?"</strong></p>
+{    
+  id: 27,    
+  title: "The Day I Started LanDecs",    
+  image: BASE_IMAGE_URL + "post/The Day I Started LanDecs.jpg",    
+  placeholderImage: getPlaceholder(27),    
+  date: "February 22, 2026",    
+  category: "Entrepreneurship",    
+  excerpt: "The story of Eldrex Delos Reyes Bula and how LanDecs started as a silent journey of resilience, courage, and small victories.",    
+  content: `    
+<p>I grew up as a child with a dream I could not yet name, a dream bigger than my circumstances. While other children played, I would sit quietly, watching them, and ask myself, <strong>"What can I do differently? How can I make a life that matters?"</strong></p>    
 
-<p>Life at home was not easy. We lived in a line of poverty, and even though my family worked hard every day, it seemed like nothing changed.</p>
+<p>Life at home was not easy. We lived with little, and though my family worked hard every day, it felt like nothing ever changed. But my mother, who I was very close to, taught me lessons that became the foundation of my journey. I followed her everywhere—whether she was farming, gathering firewood, or walking through the forest. I would ask her, <em>"Why is life so hard, even when we try so much?"</em> And she would tell me, <blockquote><em>"Because living is not about always winning. It is about showing up, even when the world feels heavy."</em></blockquote> Even as a child, I began to understand that hard work alone does not always guarantee success, but it builds strength and courage.</p>    
 
-<p>I was very close to my mother. I went with her everywhere—whether she was working, farming, or going into the forest. I would ask her every day why we struggled so much despite our hard work. She would tell me, <blockquote><em>"Because we need to live, and even if it seems like we are not moving forward, at least we are still alive."</em></blockquote> Even as a child, I began to understand the value of hard work and the reality that effort alone does not always guarantee success.</p>
+<p>I loved to help. Some would say I was different, maybe even criticize me for being better at keeping our home clean than my siblings. I never minded. I told myself, <strong><em>"Do what you can today, and do it well. If you fail, find another way tomorrow."</em></strong></p>    
 
-<p>I loved to help. Some people would say I was different, maybe even criticize me, because I was better at keeping our home clean than my siblings. I never minded. I told myself, <strong><em>"If you can do it today, do it. If you cannot do everything, do what you can. And if one day you fail, find a way to do things differently."</em></strong></p>
+<p>School was another challenge. Every day, I had to row a small boat across the river. Sometimes I got soaked. Sometimes I was covered in mud. There were days the boat almost capsized because of passing commercial boats. On top of that, classmates often bullied me, and even some teachers laughed when I tried to sing the national anthem <strong><em>(Lupang Hinirang)</em></strong> with a runny nose. I could not join school events or clubs because my family could not pay the fees. I refused to burden them.</p>    
 
-<p>School was a daily challenge. To get there, I had to row a boat back and forth, sometimes getting soaked, sometimes covered in mud. On some days, commercial boats would pass by, and our small boat nearly capsized. On top of this, I faced constant bullying from classmates. It hurt deeply, and at times even teachers laughed at me while I tried to sing the national anthem <strong><em>(Lupang Hinirang)</em></strong> with a runny nose. I could not join school events like Christmas parties or Boy Scouts because my parents could not afford the fees or contributions. I refused to burden them.</p>
+<p>By the age of twelve, I had to separate from my family to work for my aunt. She had some means, but she did not understand respect or family values. I worked long hours for a small salary of 1,000 pesos, doing everything from household chores to helping in her electronics shop, all while continuing my studies in Grade 8.</p>    
 
-<p>At the age of twelve, I separated from my family to work for my aunt, who had some means but did not understand respect or family values. I worked for over three years with a small monthly salary of 1,000 pesos, doing multitasking jobs—from household chores to helping in her electronics shop—all while continuing my studies in Grade 8.</p>
+<p>During this time, my first “tools” for creating LanDecs were simple—a second-hand ₱1,500 phone, laggy and broken. I used it to build small services, but often it could not handle the work. When it failed, I would go to our school laboratory to code and design. Sometimes, I was scared of the teacher assigned there, worried that if my project was not done, I would get in trouble. Sometimes, the electricity would go off, or someone would pull the plug, and all my work would vanish. Other times, I had no internet load or sim card subscription to save files. I learned to screenshot every screen, save every little step, and treasure every small victory. It was frustrating, but I reminded myself, <strong><em>"Even if it disappears, the effort is never wasted. Every try teaches me something."</em></strong></p>    
 
-<p>By the age of thirteen, I began to dream differently. I wanted to enter an entrepreneurial journey. I started with the concept of <strong>LawDrex</strong>, imagining a focus on space exploration. Later, I evolved the idea into <strong>LanDex</strong>, focusing on mobile phones and car automation. These ideas became my focus throughout 2019.</p>
+<p>At thirteen, I began to dream differently. I imagined the first version of <strong>LawDrex</strong>, focused on space exploration. Later, I evolved it into <strong>LanDex</strong>, aiming at mobile phones and car automation. By 2020, I officially created <strong>LanDecs</strong>, focusing on software and web applications. I started with small personal projects that helped me study, work, and organize life better. I shared them with friends, quietly testing ideas, while keeping my journey a secret—even from my family. But I felt pride in knowing that my work could speak for itself.</p>    
 
-<p>In 2020, I formally created <strong>LanDecs</strong>, shifting focus toward software and web application development. I started small with personal projects that helped me study and work efficiently. I shared these projects with friends, and gradually, LanDecs grew into a platform that helps students, professionals, and educators work more efficiently. Even though I kept everything a secret, not sharing my progress with anyone—including my family—I felt proud that my work could speak for itself.</p>
+<p>LanDecs grew slowly, one small step at a time. It became a platform that helps students, professionals, and educators work more efficiently. Even without earning much, the joy came from helping people move forward, discover possibilities, and experience platforms that are simple, free, and accessible. I realized, <strong><em>"Success is not only about money. It is about lighting a path for others and proving to yourself that you can."</em></strong></p>    
 
-<p>Today, LanDecs continues to build tools and platforms that are free, easy to use, and without ads. While I may not earn as much as I once imagined, the satisfaction comes from helping people move forward, see possibilities, and experience platforms that are simple and accessible.</p>
-
-<p><strong>LanDecs is more than a company or a tool.</strong> It is the story of a child who dared to dream despite challenges, who worked tirelessly, and who believed that small steps could lead to meaningful change. Every line of code, every project, and every tool carries a piece of that journey—one that I hope inspires others to keep pushing, learning, and creating, no matter the obstacles.</p>
-`
+<p><strong>LanDecs is more than a company or a tool.</strong> It is the story of a child who dared to dream despite fear, frustration, and failure. Every line of code, every project, every small victory carries a piece of that journey. I hope it reminds others that small steps, persistence, and courage can create meaningful change. Even if the road is difficult, even if the tools are imperfect, keep creating. Keep pushing. Keep believing. One day, your effort will speak for itself.</p>    
+`    
 },
 {
 id: 28,
