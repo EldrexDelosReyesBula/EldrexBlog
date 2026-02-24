@@ -746,7 +746,7 @@ content:   `
 {
 id: 29,
 title: "Enough, But Still Not Enough",
-image: BASE_IMAGE_URL + "post/Enough But Still Not Enough.jpg",
+image: BASE_IMAGE_URL + "post/Enough But Still Not Enough.gif",
 placeholderImage: getPlaceholder(29),
 date: "February 24, 2026",
 category: "Reflection",
