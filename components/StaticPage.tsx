@@ -27,7 +27,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
               
               <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
                  <div className="flex flex-col sm:flex-row gap-4 text-sm mt-6 p-4 bg-slate-100 dark:bg-slate-800 rounded-lg">
-                    <a href="https://eldrex.landecs.org/contact.me" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
+                    <a href="https://connect.landecs.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
                         <ExternalLink size={14} /> eldrex.landecs.org/contact.me
                     </a>
                     <span className="hidden sm:inline text-slate-300">|</span>
@@ -78,7 +78,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <Shield size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Privacy Policy</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: October 2025</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: February 25, 2026</p>
             
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
               <p>
@@ -170,7 +170,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <FileText size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Terms of Use</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: October 2025</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: February 25, 2026</p>
 
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
               <p>
@@ -302,7 +302,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                     or have concerns about its usage, please contact me immediately. Requests will be honored promptly.
                  </p>
                  <div className="flex flex-col sm:flex-row gap-4 text-sm mt-6 p-4 bg-slate-100 dark:bg-slate-800 rounded-lg">
-                    <a href="https://eldrex.landecs.org/contact.me" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
+                    <a href="https://connect.landecs.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
                         <ExternalLink size={14} /> eldrex.landecs.org/contact.me
                     </a>
                     <span className="hidden sm:inline text-slate-300">|</span>
