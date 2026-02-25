@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/new_updates.png" alt="EldrexBlog Banner" width="100%" style="margin-top:0;" />
+  <img src="https://github.com/EldrexDelosReyesBula/EldrexBlog/blob/main/assets/new_updates.png" alt="EldrexBlog Banner" width="100%" style="margin-top:0;" />
 </p>
 
 <h1 align="center">EldrexBlog</h1>
