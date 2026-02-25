@@ -1,15 +1,12 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark' | 'system';
-type Texture = 'clean' | 'paper';
 type FontSize = 'small' | 'medium' | 'large';
 type FontFamily = 'sans' | 'serif' | 'mono';
 
 interface ThemeContextType {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  texture: Texture;
-  setTexture: (texture: Texture) => void;
   fontSize: FontSize;
   setFontSize: (size: FontSize) => void;
   fontFamily: FontFamily;
@@ -21,9 +18,6 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => 
     (localStorage.getItem('theme') as Theme) || 'system'
-  );
-  const [texture, setTexture] = useState<Texture>(() => 
-    (localStorage.getItem('texture') as Texture) || 'clean'
   );
   const [fontSize, setFontSize] = useState<FontSize>(() => 
     (localStorage.getItem('fontSize') as FontSize) || 'medium'
@@ -45,17 +39,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  // Apply Texture
-  useEffect(() => {
-    const body = window.document.body;
-    if (texture === 'paper') {
-      body.classList.add('texture-paper');
-    } else {
-      body.classList.remove('texture-paper');
-    }
-    localStorage.setItem('texture', texture);
-  }, [texture]);
-
   // Apply Font Size
   useEffect(() => {
     const root = window.document.documentElement;
@@ -75,7 +58,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   return (
     <ThemeContext.Provider value={{ 
       theme, setTheme, 
-      texture, setTexture, 
       fontSize, setFontSize, 
       fontFamily, setFontFamily 
     }}>
