@@ -81,18 +81,18 @@ const InFeedAd: React.FC<InFeedAdProps> = ({ className, showBadge = true }) => {
 
   if (!adConfig) {
       return (
-        <div className={`flex flex-col w-full bg-slate-100 dark:bg-slate-800 rounded-2xl animate-pulse border border-slate-100 dark:border-slate-700 ${className || 'min-h-[320px] sm:min-h-[380px]'}`} />
+        <div className={`flex flex-col w-full h-full bg-slate-100 dark:bg-slate-800 rounded-2xl animate-pulse border border-slate-100 dark:border-slate-700 ${className || 'min-h-[320px]'}`} />
       );
   }
 
   return (
-    <div className={`flex flex-col w-full ${className || 'min-h-[320px] sm:min-h-[380px]'}`}>
-       <div className="relative w-full h-full overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 group flex flex-col">
+    <div className={`flex flex-col w-full h-full ${className || 'min-h-[320px]'}`}>
+       <div className="relative w-full h-full overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 group flex flex-col">
           
           {showBadge && (
             <div className="absolute top-4 left-4 z-20">
-              <span className="inline-flex items-center px-2 py-1 rounded-md text-[10px] font-bold bg-slate-100/90 dark:bg-slate-700/90 backdrop-blur-sm text-slate-500 dark:text-slate-300 shadow-sm tracking-wider uppercase border border-slate-200 dark:border-slate-600">
-                Ad
+              <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-[11px] font-bold bg-white/90 dark:bg-slate-900/90 backdrop-blur-md text-slate-500 dark:text-slate-400 shadow-sm tracking-wide uppercase">
+                Sponsored
               </span>
             </div>
           )}

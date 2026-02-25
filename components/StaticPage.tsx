@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, FileText, User, Shield, Copyright, ExternalLink, Lock, Database, Eye } from 'lucide-react';
 
-export type PageType = 'about' | 'privacy' | 'terms' | 'copyright';
+export type PageType = 'about' | 'privacy' | 'terms' | 'copyright' | 'contact';
 
 interface StaticPageProps {
   type: PageType;
@@ -12,6 +12,33 @@ interface StaticPageProps {
 const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
   const renderContent = () => {
     switch (type) {
+      case 'contact':
+        return (
+          <>
+            <div className="flex justify-center mb-6 text-brand-600 dark:text-brand-400">
+               <User size={48} />
+            </div>
+            <h2 className="text-4xl font-serif font-bold text-center mb-8 text-slate-900 dark:text-white">Contact Me</h2>
+            <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
+              <p>
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. 
+                Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              </p>
+              
+              <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800">
+                 <div className="flex flex-col sm:flex-row gap-4 text-sm mt-6 p-4 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                    <a href="https://eldrex.landecs.org/contact.me" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
+                        <ExternalLink size={14} /> eldrex.landecs.org/contact.me
+                    </a>
+                    <span className="hidden sm:inline text-slate-300">|</span>
+                    <a href="mailto:eldrexdelosreyesbula@gmail.com" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
+                        <User size={14} /> eldrexdelosreyesbula@gmail.com
+                    </a>
+                 </div>
+              </div>
+            </div>
+          </>
+        );
       case 'about':
         return (
           <>
@@ -47,7 +74,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
       case 'privacy':
         return (
           <>
-            <div className="flex justify-center mb-6 text-ember-600 dark:text-ember-400">
+            <div className="flex justify-center mb-6 text-brand-600 dark:text-brand-400">
                <Shield size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Privacy Policy</h2>
@@ -62,7 +89,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
 
               <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 my-8 not-prose">
                  <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white mb-3 text-lg">
-                    <Database size={20} className="text-ember-600" /> Information We Collect
+                    <Database size={20} className="text-brand-600" /> Information We Collect
                  </h3>
                  <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
                     We believe in minimalism regarding data. We do not require you to create an account or provide personal identification 
@@ -70,11 +97,11 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                  </p>
                  <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
                     <li className="flex gap-2">
-                        <span className="text-ember-500 font-bold">•</span>
+                        <span className="text-brand-500 font-bold">•</span>
                         <span><strong>Usage Data:</strong> We collect anonymous metrics regarding how you interact with the site (pages visited, time spent, scrolling behavior).</span>
                     </li>
                     <li className="flex gap-2">
-                        <span className="text-ember-500 font-bold">•</span>
+                        <span className="text-brand-500 font-bold">•</span>
                         <span><strong>Device Information:</strong> We may collect non-identifiable data about your device type, browser version, and screen size to optimize readability.</span>
                     </li>
                  </ul>
@@ -238,33 +265,33 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
               
               <div className="not-prose bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700 p-6 my-8">
                 <h3 className="font-serif font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-                  <Shield size={18} className="text-ember-600" />
+                  <Shield size={18} className="text-brand-600" />
                   Asset Credits Notice
                 </h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
                   The images featured in the articles below are respectfully acknowledged as the property of their respective owners:
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-sm font-medium text-slate-700 dark:text-slate-300">
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> What if AI Can Feel?</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> When Perfection Replaces Emotions</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> If You Have Time to Sit</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> When Responsibility Becomes a Teacher</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Future You in an AI Era</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> The Distance of the Sun</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Climbing Beyond the Impossible</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Strength in Silence</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Belief We Believe</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Worth a Thousand</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Judgement Where I Began to Change</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> When Doubt Walks Beside Me</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> The Space I Need</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> The Teacher Who Taught Me to Rise</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> When Yes Was the Wrong Answer</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> A Man Who Can Do What He Wants, Does What He Wants</li>
-                  <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Mathematics, Life, and the Balance Between Easy and Hard</li>
-                 <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Why Not You: A Personal Reflection on Courage and Action</li>
-                 <li className="flex items-start gap-2"><span className="text-ember-500">•</span> See Me After You</li>
-                <li className="flex items-start gap-2"><span className="text-ember-500">•</span> Enough But Still Not Enough</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> What if AI Can Feel?</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Perfection Replaces Emotions</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> If You Have Time to Sit</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Responsibility Becomes a Teacher</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Future You in an AI Era</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> The Distance of the Sun</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Climbing Beyond the Impossible</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Strength in Silence</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Belief We Believe</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Worth a Thousand</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Judgement Where I Began to Change</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Doubt Walks Beside Me</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> The Space I Need</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> The Teacher Who Taught Me to Rise</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Yes Was the Wrong Answer</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> A Man Who Can Do What He Wants, Does What He Wants</li>
+                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Mathematics, Life, and the Balance Between Easy and Hard</li>
+                 <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Why Not You: A Personal Reflection on Courage and Action</li>
+                 <li className="flex items-start gap-2"><span className="text-brand-500">•</span> See Me After You</li>
+                <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Enough But Still Not Enough</li>
                 </ul>
               </div>
 
@@ -275,11 +302,11 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                     or have concerns about its usage, please contact me immediately. Requests will be honored promptly.
                  </p>
                  <div className="flex flex-col sm:flex-row gap-4 text-sm mt-6 p-4 bg-slate-100 dark:bg-slate-800 rounded-lg">
-                    <a href="https://eldrex.landecs.org/contact.me" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-ember-600 hover:text-ember-700 font-medium break-all">
+                    <a href="https://eldrex.landecs.org/contact.me" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
                         <ExternalLink size={14} /> eldrex.landecs.org/contact.me
                     </a>
                     <span className="hidden sm:inline text-slate-300">|</span>
-                    <a href="mailto:eldrexdelosreyesbula@gmail.com" className="flex items-center gap-2 text-ember-600 hover:text-ember-700 font-medium break-all">
+                    <a href="mailto:eldrexdelosreyesbula@gmail.com" className="flex items-center gap-2 text-brand-600 hover:text-brand-700 font-medium break-all">
                         <User size={14} /> eldrexdelosreyesbula@gmail.com
                     </a>
                  </div>
@@ -301,9 +328,9 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
     >
       <button 
         onClick={onBack}
-        className="group flex items-center gap-2 text-slate-500 hover:text-ember-600 transition-colors mb-8"
+        className="group flex items-center gap-2 text-slate-500 hover:text-brand-600 transition-colors mb-8"
       >
-        <div className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 group-hover:bg-ember-50 dark:group-hover:bg-ember-900/20 transition-colors">
+        <div className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 group-hover:bg-brand-50 dark:group-hover:bg-brand-900/20 transition-colors">
             <ArrowLeft size={20} />
         </div>
         <span className="font-bold text-sm">Back to Stories</span>

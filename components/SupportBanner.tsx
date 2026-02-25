@@ -18,11 +18,11 @@ const SupportBanner: React.FC<SupportBannerProps> = ({ isVisible, onClose }) => 
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           className="fixed bottom-4 right-4 z-[55] w-full max-w-md px-4 sm:px-0"
         >
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-ember-100 dark:border-slate-700 p-5 flex items-start gap-4 relative overflow-hidden">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-2xl border border-brand-100 dark:border-slate-700 p-5 flex items-start gap-4 relative overflow-hidden">
             {/* Background Decoration */}
-            <div className="absolute top-0 right-0 w-24 h-24 bg-ember-50 dark:bg-ember-900/10 rounded-bl-full -mr-4 -mt-4 z-0 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-24 h-24 bg-brand-50 dark:bg-brand-900/10 rounded-bl-full -mr-4 -mt-4 z-0 pointer-events-none" />
             
-            <div className="p-3 bg-ember-100 dark:bg-ember-900/30 text-ember-600 dark:text-ember-400 rounded-xl relative z-10 shrink-0">
+            <div className="p-3 bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 rounded-xl relative z-10 shrink-0">
               <Coffee size={24} />
             </div>
 
@@ -38,7 +38,7 @@ const SupportBanner: React.FC<SupportBannerProps> = ({ isVisible, onClose }) => 
                   href="https://ko-fi.com/landecsorg" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-ember-600 text-white text-xs font-bold rounded-lg hover:bg-ember-700 transition-colors shadow-lg shadow-ember-500/20"
+                  className="px-4 py-2 bg-brand-600 text-white text-xs font-bold rounded-lg hover:bg-brand-700 transition-colors shadow-lg shadow-brand-500/20"
                 >
                   Support Now
                 </a>

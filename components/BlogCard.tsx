@@ -1,6 +1,6 @@
 import React, { useState, forwardRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { BlogPost } from '../types';
 
 interface BlogCardProps {
@@ -8,6 +8,11 @@ interface BlogCardProps {
   onClick: (id: number) => void;
   index: number;
 }
+
+const calculateReadingTime = (content: string) => {
+  const words = content.replace(/<[^>]*>/g, '').split(/\s+/).length;
+  return Math.ceil(words / 200);
+};
 
 const BlogCard = forwardRef<HTMLElement, BlogCardProps>(({ post, onClick, index }, ref) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -32,8 +37,9 @@ const BlogCard = forwardRef<HTMLElement, BlogCardProps>(({ post, onClick, index 
         <img
           src={post.image || post.placeholderImage}
           alt={post.title}
-          className={`w-full h-full object-cover transform group-hover:scale-105 transition-all duration-700 ease-out ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`w-full h-full object-cover transform group-hover:scale-110 transition-all duration-700 ease-out ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
           loading="lazy"
+          decoding="async"
           onLoad={() => setImageLoaded(true)}
         />
         
@@ -45,12 +51,18 @@ const BlogCard = forwardRef<HTMLElement, BlogCardProps>(({ post, onClick, index 
       </div>
 
       <div className="flex flex-col flex-grow px-1">
-        <div className="flex items-center gap-2 text-xs font-semibold text-slate-400 dark:text-slate-500 mb-3 tracking-wide uppercase">
-          <Calendar size={12} className="text-ember-500" />
-          {post.date}
+        <div className="flex items-center gap-4 text-xs font-semibold text-slate-400 dark:text-slate-500 mb-3 tracking-wide uppercase">
+          <div className="flex items-center gap-1.5">
+            <Calendar size={12} className="text-brand-500" />
+            {post.date}
+          </div>
+          <div className="flex items-center gap-1.5">
+            <Clock size={12} className="text-brand-500" />
+            {calculateReadingTime(post.content)} min read
+          </div>
         </div>
 
-        <h3 className="text-2xl font-bold font-serif text-slate-900 dark:text-slate-100 mb-3 leading-snug group-hover:text-ember-600 dark:group-hover:text-ember-400 transition-colors line-clamp-2">
+        <h3 className="text-2xl font-bold font-serif text-slate-900 dark:text-slate-100 mb-3 leading-snug group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors line-clamp-2">
           {post.title}
         </h3>
 
@@ -58,8 +70,8 @@ const BlogCard = forwardRef<HTMLElement, BlogCardProps>(({ post, onClick, index 
           {post.excerpt}
         </p>
 
-        <div className="mt-auto flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-ember-600 dark:group-hover:text-ember-400 transition-colors">
-          <span className="border-b-2 border-slate-100 dark:border-slate-700 group-hover:border-ember-200 dark:group-hover:border-ember-800 pb-0.5 transition-all">Read Story</span>
+        <div className="mt-auto flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+          <span className="border-b-2 border-slate-100 dark:border-slate-700 group-hover:border-brand-200 dark:group-hover:border-brand-800 pb-0.5 transition-all">Read Story</span>
           <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
         </div>
       </div>

@@ -62,14 +62,14 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, selectedCat
           onClick={() => !isDragging && onSelectCategory('All')}
           className={`relative flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 snap-center whitespace-nowrap ${
             selectedCategory === 'All'
-              ? 'text-white shadow-lg shadow-ember-500/20'
-              : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-ember-200 dark:hover:border-ember-700 hover:text-ember-600 dark:hover:text-ember-400'
+              ? 'text-white shadow-lg shadow-brand-500/20'
+              : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-200 dark:hover:border-brand-700 hover:text-brand-600 dark:hover:text-brand-400'
           }`}
         >
           {selectedCategory === 'All' && (
             <motion.div
               layoutId="activeFilter"
-              className="absolute inset-0 bg-slate-900 dark:bg-ember-600 rounded-full"
+              className="absolute inset-0 bg-brand-600 rounded-full"
               transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
             />
           )}
@@ -82,14 +82,14 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, selectedCat
             onClick={() => !isDragging && onSelectCategory(category)}
             className={`relative flex-shrink-0 px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 snap-center whitespace-nowrap ${
               selectedCategory === category
-                ? 'text-white shadow-lg shadow-ember-500/20'
-                : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-ember-200 dark:hover:border-ember-700 hover:text-ember-600 dark:hover:text-ember-400'
+                ? 'text-white shadow-lg shadow-brand-500/20'
+                : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-brand-200 dark:hover:border-brand-700 hover:text-brand-600 dark:hover:text-brand-400'
             }`}
           >
             {selectedCategory === category && (
               <motion.div
                 layoutId="activeFilter"
-                className="absolute inset-0 bg-slate-900 dark:bg-ember-600 rounded-full"
+                className="absolute inset-0 bg-brand-600 rounded-full"
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
             )}

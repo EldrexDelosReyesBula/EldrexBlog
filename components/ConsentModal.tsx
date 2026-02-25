@@ -17,7 +17,7 @@ const ConsentModal: React.FC<ConsentModalProps> = ({ onAccept, onDecline }) => {
         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
         className="pointer-events-auto max-w-2xl w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-200 dark:border-slate-800 shadow-2xl rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start gap-5"
       >
-        <div className="p-3 bg-ember-50 dark:bg-ember-900/30 text-ember-600 dark:text-ember-400 rounded-xl flex-shrink-0">
+        <div className="p-3 bg-brand-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 rounded-xl flex-shrink-0">
           <BarChart2 size={24} />
         </div>
         
@@ -34,7 +34,7 @@ const ConsentModal: React.FC<ConsentModalProps> = ({ onAccept, onDecline }) => {
         <div className="flex flex-row sm:flex-col gap-3 w-full sm:w-auto mt-2 sm:mt-0">
           <button
             onClick={onAccept}
-            className="flex-1 sm:flex-none px-6 py-2.5 bg-ember-600 text-white text-sm font-bold rounded-xl hover:bg-ember-700 transition-colors shadow-lg shadow-ember-500/30 whitespace-nowrap"
+            className="flex-1 sm:flex-none px-6 py-2.5 bg-brand-600 text-white text-sm font-bold rounded-xl hover:bg-brand-700 transition-colors shadow-lg shadow-brand-500/30 whitespace-nowrap"
           >
             Allow
           </button>

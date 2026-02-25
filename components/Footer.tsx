@@ -36,17 +36,18 @@ const Footer: React.FC<FooterProps> = ({ onOpenPreferences, onOpenSettings, onNa
           <div className="grid grid-cols-2 gap-8 text-center md:text-left">
               <div className="flex flex-col gap-3">
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Site</h4>
-                  <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-slate-500 hover:text-ember-600 text-sm transition-colors text-left mx-auto md:mx-0">Home</button>
-                  <button onClick={() => onNavigate('about')} className="text-slate-500 hover:text-ember-600 text-sm transition-colors text-left mx-auto md:mx-0">About</button>
-                  <a href="https://ko-fi.com/landecsorg" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-ember-600 text-sm transition-colors text-left mx-auto md:mx-0 flex items-center gap-1">
+                  <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Home</button>
+                  <button onClick={() => onNavigate('about')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">About</button>
+                  <button onClick={() => onNavigate('contact')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Contact</button>
+                  <a href="https://ko-fi.com/landecsorg" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0 flex items-center gap-1">
                       Support <ExternalLink size={10} />
                   </a>
               </div>
               <div className="flex flex-col gap-3">
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Legal</h4>
-                  <button onClick={() => onNavigate('privacy')} className="text-slate-500 hover:text-ember-600 text-sm transition-colors text-left mx-auto md:mx-0">Privacy Policy</button>
-                  <button onClick={() => onNavigate('terms')} className="text-slate-500 hover:text-ember-600 text-sm transition-colors text-left mx-auto md:mx-0">Terms of Use</button>
-                  <button onClick={() => onNavigate('copyright')} className="text-slate-500 hover:text-ember-600 text-sm transition-colors text-left mx-auto md:mx-0">Copyright Notice</button>
+                  <button onClick={() => onNavigate('privacy')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Privacy Policy</button>
+                  <button onClick={() => onNavigate('terms')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Terms of Use</button>
+                  <button onClick={() => onNavigate('copyright')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Copyright Notice</button>
               </div>
           </div>
 
@@ -81,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenPreferences, onOpenSettings, onNa
               {onOpenSettings && (
                  <button 
                    onClick={onOpenSettings}
-                   className="flex items-center gap-1.5 text-xs font-medium text-ember-600 dark:text-ember-400 bg-ember-50 dark:bg-ember-900/20 px-3 py-1.5 rounded-full border border-ember-100 dark:border-ember-800 hover:bg-ember-100 dark:hover:bg-ember-900/40 transition-colors"
+                   className="flex items-center gap-1.5 text-xs font-medium text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/20 px-3 py-1.5 rounded-full border border-brand-100 dark:border-brand-800 hover:bg-brand-100 dark:hover:bg-brand-900/40 transition-colors"
                  >
                    <Sliders size={12} />
                    <span>Appearance</span>
