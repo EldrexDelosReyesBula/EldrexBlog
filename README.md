@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/EldrexDelosReyesBula/EldrexBlog/blob/main/assets/new_updates.png" alt="EldrexBlog Banner" width="100%" style="margin-top:0;" />
+  <img src="https://eldrex.landecs.org/squad/new_updates.png" alt="Eldrex Bula Banner" width="100%" style="margin-top:0;" />
 </p>
 
-<h1 align="center">EldrexBlog</h1>
+<h1 align="center">Eldrex Blog</h1>
 
 <p align="center">
   A personal space for ideas, stories, and reflections—designed for smooth interactions, creative freedom, and private exploration.
