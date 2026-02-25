@@ -24,18 +24,18 @@
             colors: {
               background: '#fafafa',
               surface: '#ffffff',
-              ember: {
-                50: '#fff7ed',
-                100: '#ffedd5',
-                200: '#fed7aa',
-                300: '#fdba74',
-                400: '#fb923c',
-                500: '#f97316',
-                600: '#ea580c', // Primary Brand Color
-                700: '#c2410c',
-                800: '#9a3412',
-                900: '#7c2d12',
-                950: '#431407',
+              brand: {
+                50: '#fff0f3',
+                100: '#ffe3e9',
+                200: '#ffcbd6',
+                300: '#ffa1b5',
+                400: '#ff6b8b',
+                500: '#ff3361',
+                600: '#ff0557', // Primary Brand Color
+                700: '#e60045',
+                800: '#c2003d',
+                900: '#a30037',
+                950: '#5c001a',
               },
               slate: {
                 850: '#1e293b',
@@ -68,45 +68,17 @@
         transition: font-size 0.3s ease;
       }
       body {
-        background-color: #fafafa;
-        background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+        background-color: #fffafb;
+        background-image: radial-gradient(#ffe3e9 1px, transparent 1px);
         background-size: 24px 24px;
         transition: background-color 0.3s ease, color 0.3s ease;
       }
       
       /* Dark Mode Overrides */
       .dark body {
-        background-color: #0f172a;
-        background-image: radial-gradient(#1e293b 1px, transparent 1px);
+        background-color: #110a0e;
+        background-image: radial-gradient(#2c121d 1px, transparent 1px);
         color: #f8fafc;
-      }
-
-      /* Paper Texture Mode - Enhanced */
-      body.texture-paper {
-        background-color: #fdfbf7; /* Warmer, richer cream */
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.06'/%3E%3C/svg%3E");
-        background-size: 150px 150px;
-      }
-      
-      /* Paper mode UI overrides for better integration */
-      .texture-paper .bg-white {
-        background-color: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(0,0,0,0.03);
-      }
-      .texture-paper .bg-slate-50 {
-         background-color: rgba(240, 238, 230, 0.6);
-      }
-      
-      .dark body.texture-paper {
-        background-color: #1a1816; /* Deep warm charcoal */
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
-      }
-      
-      .dark.texture-paper .bg-slate-800,
-      .dark.texture-paper .bg-slate-900 {
-        background-color: rgba(30, 28, 26, 0.8);
-        border: 1px solid rgba(255,255,255,0.03);
       }
 
       /* Shimmer Animation for Skeletons */
@@ -157,8 +129,44 @@
 
       /* Accessibility: Focus styles */
       :focus-visible {
-        outline: 2px solid #ea580c; /* ember-600 */
+        outline: 2px solid #ff0557; /* brand-600 */
         outline-offset: 2px;
+      }
+
+      /* Grainy Texture */
+      .grainy-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.04;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+      .dark .grainy-bg {
+        opacity: 0.06;
+      }
+
+      /* Liquid Glass Effect */
+      .liquid-glass {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(24px) saturate(150%);
+        -webkit-backdrop-filter: blur(24px) saturate(150%);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 
+          inset 0 1px 1px rgba(255, 255, 255, 0.5),
+          inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+          0 8px 32px rgba(0, 0, 0, 0.15);
+      }
+      .dark .liquid-glass {
+        background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 
+          inset 0 1px 1px rgba(255, 255, 255, 0.2),
+          inset 0 -1px 1px rgba(0, 0, 0, 0.4),
+          0 8px 32px rgba(0, 0, 0, 0.4);
       }
     </style>
   <script type="importmap">
@@ -181,7 +189,15 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-background text-slate-900 dark:text-slate-100 antialiased selection:bg-ember-100 selection:text-ember-900 dark:selection:bg-ember-900 dark:selection:text-ember-100">
+  <body class="bg-background text-slate-900 dark:text-slate-100 antialiased selection:bg-brand-100 selection:text-brand-900 dark:selection:bg-brand-900 dark:selection:text-brand-100">
+    <svg style="position: absolute; width: 0; height: 0;">
+      <filter id="liquid-refraction">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+        <feTurbulence baseFrequency="0.01" numOctaves="3" result="noise" seed="1" />
+        <feDisplacementMap in="blur" in2="noise" scale="20" />
+      </filter>
+    </svg>
+    <div class="grainy-bg"></div>
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6548730882346475"
