@@ -798,5 +798,47 @@ content:   `
 <p><strong>You were becoming one.</strong></p>
 
 `
+},
+{
+  id: 3,
+  title: "Shhhh.",
+  image: BASE_IMAGE_URL + "post/shhhh.jpg",
+  placeholderImage: getPlaceholder(30),
+  date: "February 27, 2026",
+  category: "Reflection",
+  excerpt: "A single sound from our parents that carried fear, discipline, correction, and love — shaping how we understood respect, boundaries, and responsibility.",
+  content:   `
+<p><strong>“Shhhh.”</strong></p>
+
+<p>It is only a single sound. No long speech. No raised voice. Just a sharp breath released between the teeth. Yet in many homes, that sound carries the weight of <strong>authority</strong>, <strong>warning</strong>, and <strong>consequence</strong>.</p>
+
+<p>When we were children, that sound meant <u>stop</u>. It meant <u>behave</u>. It meant <u>you are crossing a line</u>. Before any explanation came, before any lecture followed, we already understood. The room would suddenly feel smaller. Our laughter would fade. Our bodies would straighten. We knew something was wrong.</p>
+
+<p>That one sound held many meanings. It could mean respect the elders. It could mean lower your voice. It could mean you are embarrassing the family. It could mean do not answer back. It was not just discipline; it was a signal that we were being corrected.</p>
+
+<p>For many of us, discipline in the past was strict. Sometimes it came with a slipper, a broom, a thin bamboo stick, or a branch from the yard. Sometimes it left marks. The belief was simple and common:</p>
+
+<blockquote><em>“Hurt the child if you must, but do not cripple them.”</em></blockquote>
+
+<p>Pain was seen as a teacher. Fear was considered a guide. Parents believed that strong discipline would build strong character.</p>
+
+<p>We learned quickly. Often, we were warned first. We were told what was right and what was wrong. But if we repeated the mistake, then we already knew what would follow. There was a clear system: <strong>instruction</strong>, <strong>warning</strong>, <strong>consequence</strong>. It was not always constant punishment. It was correction after repetition. That pattern shaped our awareness of boundaries.</p>
+
+<p>Today, things are different. Laws protect children more clearly. Parents are more cautious. Many families now choose softer methods. Some children grow up without ever experiencing the kind of discipline older generations knew. In many cases, that is a positive change. Protection from harm is important. Emotional safety matters.</p>
+
+<p>Yet with change comes new challenges. Some elders feel that <strong>respect has weakened</strong>. They notice children talking back, interrupting adults, shouting at parents, or laughing during serious conversations. They see moments where guidance is ignored rather than absorbed. It can feel as if authority has shifted, as if parents are now the ones adjusting to the child instead of the child learning to follow direction.</p>
+
+<p>But discipline is not only about fear. And freedom is not the same as disrespect. Every generation faces its own struggles. Older generations were shaped by strictness and consequence. Newer generations are shaped by rights, voice, and expression. Neither system is perfect. Both can fail if taken to extremes.</p>
+
+<p>The real lesson may not be about whether discipline should hurt or not. It may be about understanding <u>balance</u>. Fear can create obedience, but understanding creates wisdom. Pain can stop behavior, but explanation can transform character. Respect should not come only from fear of punishment. It should grow from awareness, empathy, and responsibility.</p>
+
+<p>As children grow, they also learn to filter. Not everything they hear must define them. They learn to choose what lessons to keep and what habits to release. Parents guide. Children absorb. Over time, children also reflect.</p>
+
+<p>That single <strong>“shhhh”</strong> reminds us of where we came from. It reminds us of boundaries, consequences, and respect. It also invites us to think about how we want to discipline the next generation. Not by erasing the past, but by improving it.</p>
+
+<p>Perhaps the goal is not to return to fear, nor to abandon authority, but to raise children who understand why they should listen — not only because they are afraid, but because they value what is right.</p>
+
+<p>In the end, that small sound was never just silence. It was a symbol of guidance, correction, and the complicated love of parents trying to raise children the best way they knew how.</p>
+`
 }
 ];
