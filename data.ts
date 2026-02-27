@@ -840,5 +840,39 @@ content:   `
 
 <p>In the end, that small sound was never just silence. It was a symbol of guidance, correction, and the complicated love of parents trying to raise children the best way they knew how.</p>
 `
+},
+{
+id: 31,
+title: "First Step to Manila",
+image: BASE_IMAGE_URL + "post/manila.png",
+placeholderImage: getPlaceholder(31),
+date: "February 27, 2026",
+category: "Reflection",
+excerpt: "A personal journey of courage, fear, and discovering Manila for the first time.",
+content:   `
+<p><strong>Manila.</strong></p>
+
+<p>It was the first time I decided to go far from my family, to step out of the familiar and into the unknown. I felt a mixture of hesitation and courage—the kind of courage that whispers, <em>“This is your chance; don’t let fear hold you back.”</em> Back home in our village, people would say things like, <q>It’s too hard to study in Manila,</q> <q>It’s dangerous there,</q> or <q>You won’t last long; they have killers and drug addicts everywhere.</q> Their words haunted me, yet they also sparked a curiosity I couldn’t ignore. I wanted to see the truth for myself.</p>
+
+<p>The journey itself was exhausting. After two days on a bus, stopping only to stretch and grab small snacks, we finally reached Quezon. My stomach often rebelled, despite my constant intake of ginger and tamarind candies to settle it. Staring out the window, I kept asking myself, <em>“Why are some people so afraid to take chances? Are their fears real, or just stories they tell themselves?”</em> Manila was a mystery to me, a city I had only imagined in my dreams.</p>
+
+<p>When the bus finally arrived at the terminal at around 7 pm, I was struck by awe. The city was alive with lights, the hum of traffic, the distant siren of an ambulance, and the chatter of countless strangers. Towering buildings loomed above me, and in that moment, I felt proud. I was standing in a place where others from my village hesitated to go. I was finally living what they only warned about.</p>
+
+<p>My plan was simple: study at <a href="https://udmwebsite.udm.edu.ph/" target="_blank"><strong>Universidad De Manila</strong></a>. But we arrived too late; the admissions had already closed. Disappointment washed over me, but I didn’t let it stay. We tried <a href="https://cityofmalabonuniversity.edu.ph/" target="_blank"><strong>City of Malabon University</strong></a>, but nothing worked. Then, almost by chance, I stumbled upon <a href="https://navotaspolytechniccollege.edu.ph/" target="_blank"><strong>Navotas Polytechnic College</strong></a> online. My first attempt to enroll failed—I was too honest, telling them I wasn’t a Navoteño. But I didn’t give up. I applied again, this time through Navotas Comelec for support, and finally, I succeeded. The exhaustion, the anxiety, the doubts—they all melted away with that one small victory.</p>
+
+<blockquote>
+<p>I realized then that life doesn’t come with guarantees. People’s warnings are neither wholly right nor entirely wrong. The truth can only be discovered by stepping forward, by daring to try, by opening yourself to new experiences.</p>
+</blockquote>
+
+<p>Strangers I met along the way were kind, and sometimes I misjudged them—but every interaction taught me something valuable.</p>
+
+<p>My admission process also came with small, funny lessons. The school announced that we needed to wear formal clothing for the entrance exam for the AIS course, a two-year program. When I saw someone in a black t-shirt, casually dressed, I couldn’t help but laugh and ask, <em>“Is this formal here?”</em> The moment reminded me that life is filled with surprises, and sometimes, rules are flexible—what matters is the courage to step in, prepared or not.</p>
+
+<blockquote>
+<p><strong>“The city may be big, the roads unfamiliar, and the challenges countless—but your first step will always be the bravest.”</strong></p>
+</blockquote>
+
+<p>Looking back, I now understand: fear is natural, uncertainty inevitable, but courage is what turns hesitation into opportunity. Manila taught me this: you cannot know what’s waiting for you unless you go. You cannot conquer fear unless you face it. And sometimes, the journey itself—messy, exhausting, and full of mistakes—is the reward.</p>
+`
 }
 ];
