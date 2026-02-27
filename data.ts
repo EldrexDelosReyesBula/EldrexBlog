@@ -844,7 +844,7 @@ content:   `
 {
 id: 31,
 title: "First Step to Manila",
-image: BASE_IMAGE_URL + "post/manila.png",
+image: BASE_IMAGE_URL + "post/manila.jpg",
 placeholderImage: getPlaceholder(31),
 date: "February 27, 2026",
 category: "Reflection",
