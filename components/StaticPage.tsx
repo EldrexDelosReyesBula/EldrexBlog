@@ -292,6 +292,7 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Why Not You: A Personal Reflection on Courage and Action</li>
                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> See Me After You</li>
                 <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Enough But Still Not Enough</li>
+                <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Shhhh.</li>
                 </ul>
               </div>
 
