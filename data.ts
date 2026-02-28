@@ -878,7 +878,7 @@ content:   `
 {
 id: 32,
 title: "Who Am I Afraid of Being Behind?",
-image: BASE_IMAGE_URL + "post/left behind.gif",
+image: BASE_IMAGE_URL + "post/leftbehind.gif",
 placeholderImage: getPlaceholder(32),
 date: "February 28, 2026",
 category: "Reflection",
