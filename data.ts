@@ -874,5 +874,47 @@ content:   `
 
 <p>Looking back, I now understand: fear is natural, uncertainty inevitable, but courage is what turns hesitation into opportunity. Manila taught me this: you cannot know what’s waiting for you unless you go. You cannot conquer fear unless you face it. And sometimes, the journey itself—messy, exhausting, and full of mistakes—is the reward.</p>
 `
+},
+{
+id: 32,
+title: "Who Am I Afraid of Being Behind?",
+image: BASE_IMAGE_URL + "post/left behind.gif",
+placeholderImage: getPlaceholder(32),
+date: "February 28, 2026",
+category: "Reflection",
+excerpt: "A personal reflection on the fear of being 'behind' and the realization that the real comparison is with the person I am capable of becoming.",
+content:   `
+
+<p>When I imagine being <strong>“behind,”</strong> I do not immediately see other people standing in front of me. I see <em>versions of myself</em>.</p>
+
+<p>At first, I thought I was afraid of being behind my classmates, behind my colleagues, behind people my age who seem to be achieving more. Social media makes it easy to measure life like a scoreboard. Someone launches a business. Someone graduates with honors. Someone travels, earns, builds, grows. It creates the illusion that life is a race with visible rankings. In those moments, I feel the pressure to keep up, to prove that I am not falling behind.</p>
+
+<p>But when I look deeper, I realize I am not truly afraid of being behind them. I am afraid of being behind the person I know I can become.</p>
+
+<p>The fear is not about comparison. It is about <strong>potential</strong>.</p>
+
+<p>There is a quiet voice inside me that says, <em>“You are capable of more.”</em> When I procrastinate, hesitate, or let doubt win, that is when the fear grows stronger. I begin to imagine a future version of myself who worked harder, learned faster, and took more risks. The thought that I might disappoint that future version of me is heavier than any competition with others.</p>
+
+<p>Sometimes I am afraid of being behind my dreams. I have goals that require discipline, patience, and consistency. When progress feels slow, I question whether I am doing enough. In a world that celebrates speed, it is easy to feel inadequate for moving at a steady pace. Yet I am learning that growth is not always loud. Sometimes it happens quietly, beneath the surface.</p>
+
+<blockquote>
+<p><strong>“Being behind is often just being in progress.”</strong></p>
+</blockquote>
+
+<p>I also realize that the fear of being behind is connected to expectations. Family expectations. Personal standards. The desire to build something meaningful. I do not want to look back one day and wonder what could have happened if I had been braver.</p>
+
+<p>But I am beginning to understand something important: life is not a synchronized timeline. We do not all reach milestones at the same moment. Some people bloom early. Others bloom late. Both are valid. Comparing chapters of different books will always lead to unnecessary pressure.</p>
+
+<blockquote>
+<p><strong>“The clock that matters most is the one beating inside your chest, not the one ticking on the wall.”</strong></p>
+</blockquote>
+
+<p>When I imagine being behind now, I try to shift the question. Instead of asking, <u>“Who am I behind?”</u> I ask, <u>“What am I learning right now?”</u> If I am learning, improving, and moving forward, even slowly, then I am not behind. I am simply on my own path.</p>
+
+<p>In truth, the only person I fear being behind is the person I am capable of becoming. And that fear, when handled well, is not destructive. It becomes fuel. It reminds me to show up, to try again, to keep building, even when progress feels invisible.</p>
+
+<p>So maybe being <strong>“behind”</strong> is not a position. Maybe it is a feeling that signals growth is still possible. And as long as growth is still possible, I am exactly where I need to be.</p>
+
+`
 }
 ];
