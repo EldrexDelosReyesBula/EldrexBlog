@@ -927,11 +927,11 @@ content:   `
   excerpt: "A reflection on the silent battles hidden behind curated smiles and glowing screens.",
   content: `
   
-  <p style="text-align:center;">
+  <p>
     <strong><em>The Smile That Breaks in Silence</em></strong>
   </p>
 
-  <p style="text-align:center;">
+  <p>
     <u>An honest reflection on hidden strength and unseen battles</u>
   </p>
 
@@ -1019,7 +1019,7 @@ content:   `
     Is not advice, or cure, or creed —
   </p>
 
-  <p style="text-align:center;">
+  <p>
     <strong>
       But someone patient, brave, and kind,<br/>
       Who stays when storms consume the mind.<br/>
