@@ -932,10 +932,6 @@ content:   `
   </p>
 
   <p>
-    <u>An honest reflection on hidden strength and unseen battles</u>
-  </p>
-
-  <p>
     A fragile smile, a silver gleam,<br/>
     A careful mask, a practiced scene.<br/>
     It hides a war no eyes can trace,<br/>
@@ -1020,12 +1016,10 @@ content:   `
   </p>
 
   <p>
-    <strong>
       But someone patient, brave, and kind,<br/>
       Who stays when storms consume the mind.<br/>
       Someone who means it when they say,<br/>
       “Tell me the truth. Are you okay?”
-    </strong>
   </p>
 
   `
