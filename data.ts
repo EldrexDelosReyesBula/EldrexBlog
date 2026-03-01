@@ -916,5 +916,118 @@ content:   `
 <p>So maybe being <strong>“behind”</strong> is not a position. Maybe it is a feeling that signals growth is still possible. And as long as growth is still possible, I am exactly where I need to be.</p>
 
 `
+},
+{
+  id: 33,
+  title: "Smiling in the Quiet War",
+  image: BASE_IMAGE_URL + "post/smiling-in-the-quiet-war.gif",
+  placeholderImage: getPlaceholder(33),
+  date: "April 09, 2024",
+  category: "Poetry",
+  excerpt: "A reflection on the silent battles hidden behind curated smiles and glowing screens.",
+  content: `
+  
+  <p style="text-align:center;">
+    <strong><em>The Smile That Breaks in Silence</em></strong>
+  </p>
+
+  <p style="text-align:center;">
+    <u>An honest reflection on hidden strength and unseen battles</u>
+  </p>
+
+  <p>
+    A fragile smile, a silver gleam,<br/>
+    A careful mask, a practiced scene.<br/>
+    It hides a war no eyes can trace,<br/>
+    A silent storm behind the face.
+  </p>
+
+  <p>
+    The world applauds what it can see,<br/>
+    The curated calm, the symmetry.<br/>
+    But never walks the inner land<br/>
+    Where trembling thoughts unspoken stand.
+  </p>
+
+  <p>
+    I move through crowds, yet stand apart,<br/>
+    A quiet exile of the heart.<br/>
+    Each step is heavy, slow, and worn,<br/>
+    Each breath a battle before dawn.
+  </p>
+
+  <blockquote>
+    <p>
+      The mind, a maze of shadowed cries,<br/>
+      Where hope retreats and daylight dies.
+    </p>
+  </blockquote>
+
+  <p>
+    They ask, <em>“Are you okay?”</em> — I smile.<br/>
+    A well-rehearsed and gentle style.<br/>
+    My lips comply; my soul conceals<br/>
+    The thunder that it never reveals.
+  </p>
+
+  <p>
+    I wear my laughter like a shield,<br/>
+    A polished blade I always wield.<br/>
+    But hollow sounds cannot erase<br/>
+    The fire grief has left in place.
+  </p>
+
+  <p>
+    Not weak. Not shattered. Not untrue.<br/>
+    Just unseen by the passing view.<br/>
+    A spirit trapped in glowing screens,<br/>
+    In filtered light and flawless scenes.
+  </p>
+
+  <blockquote>
+    <p>
+      Of likes that flicker, fade, and scroll,<br/>
+      While silence swallows up the soul.
+    </p>
+  </blockquote>
+
+  <p>
+    To feel too much, yet speak too small,<br/>
+    To stand so steady while you fall.<br/>
+    To hold the sky for everyone<br/>
+    While breaking quietly, undone.
+  </p>
+
+  <p>
+    That is a strength they’ll never name —<br/>
+    To smile while standing in the flame.<br/>
+    To lift the world with shaking hands<br/>
+    And still obey its sharp demands.
+  </p>
+
+  <p>
+    So when you see a smile that strains,<br/>
+    A laugh that trembles under chains,<br/>
+    Look past the surface, bright and slow —<br/>
+    There’s more than what the eyes will show.
+  </p>
+
+  <p>
+    For some of us are fading deep,<br/>
+    While others think we’re fast asleep.<br/>
+    And maybe what we truly need<br/>
+    Is not advice, or cure, or creed —
+  </p>
+
+  <p style="text-align:center;">
+    <strong>
+      But someone patient, brave, and kind,<br/>
+      Who stays when storms consume the mind.<br/>
+      Someone who means it when they say,<br/>
+      “Tell me the truth. Are you okay?”
+    </strong>
+  </p>
+
+  `
 }
 ];
