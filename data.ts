@@ -1023,5 +1023,128 @@ content:   `
   </p>
 
   `
+},
+{
+id: 34,
+title: "When the World Gives You Nothing, You Have the Most Room to Build Everything",
+image: BASE_IMAGE_URL + "post/build-everything.png",
+placeholderImage: getPlaceholder(34),
+date: "March 6, 2026",
+category: "Personal Reflection",
+excerpt: "A reflection on growing up in hardship, helping family survive, and how those experiences shaped resilience, gratitude, and purpose.",
+content: `
+<p><em>"When the world gives you nothing, you have the most room to build everything."</em></p>
+
+<p>
+Life does not always begin with comfort, opportunity, or fairness. For some people, life begins with dust on their hands, calluses from work, and responsibilities far beyond their age. My story began in a place where survival required effort every single day, and where <strong>family was the center of everything</strong>.
+</p>
+
+<p>
+I grew up watching my parents work endlessly. Their bodies were often covered in charcoal dust because they burned wood to make charcoal for cooking and selling. Sometimes I helped them collect it, even entering the small dark holes where the charcoal was gathered. The work was hard, dirty, and exhausting, but it was our reality.
+</p>
+
+<p>
+I am the <strong>only son among five sisters</strong>. Being the only boy meant I felt a strong responsibility to care for my parents. Even as a child, I helped with farming, cleaning the house, washing dishes, and doing whatever I could to make life a little easier for them. I always said that cleaning was something I was good at, even if sometimes people bullied me and called me gay for it. But I never felt ashamed of helping my family.
+</p>
+
+<p>
+One of my favorite memories was being with my mother in the forest while we were cutting trees to make charcoal. One day, while we were cutting a tree, we discovered that it had a beehive inside. The moment the bees started flying out, I ran as fast as I could while my mother laughed as she watched me. Unfortunately, one bee still managed to sting me.
+</p>
+
+<blockquote>
+<p><em>“I am the one cutting the tree. Why did the bees bite you instead of me?”</em></p>
+</blockquote>
+
+<p>
+Moments like that were simple, but they were filled with laughter and love. I loved being with my mother, and I loved spending time with my sisters. As the third child, I often helped teach my younger sisters and took care of them when my parents were busy working.
+</p>
+
+<p>
+Sometimes people would tell my parents:
+</p>
+
+<blockquote>
+<p><em>“Liza, Elmer, you only have one son. Take care of him. Do not let him work.”</em></p>
+</blockquote>
+
+<p>
+But they did not know that helping my family was something I chose. One day I secretly told my parents:
+</p>
+
+<blockquote>
+<p><strong>“I am the only son, and I know how hard it is to work. I enjoy the days I spend helping all of you.”</strong></p>
+</blockquote>
+
+<p>
+Those moments were not a burden to me. They were moments of <strong>love, responsibility, and belonging</strong>.
+</p>
+
+<p>
+There were also quiet moments when I stood in the rice fields planting rice just to help pay our debts. While working, I sometimes looked up at the mountains nearby and wondered what life might be like beyond them.
+</p>
+
+<p>
+My childhood was filled with work. I washed dishes, washed clothes by hand in the river, and helped plant pineapples in the mountains. There was one place under a <strong>santol tree</strong> where I often rested. Sometimes I wrote words on the tree, leaving small scars on its bark.
+</p>
+
+<p>
+I always cleaned that place and kept it peaceful. But whenever I returned later, it would already be covered again with mud, grass, and sometimes even snakes. Nature always reclaimed it. That place quietly reminded me that <em>time keeps moving forward</em>.
+</p>
+
+<p>
+Even though many pineapples grew in the mountains, I always let my sisters eat them first. Seeing them happy was enough for me. But there were also days when I cried quietly because I felt that I could not help my parents as much as I wanted to.
+</p>
+
+<p>
+When I was <strong>12 years old</strong>, life changed. I was separated from my parents and went to work for my aunt. From that time on, my visits home became rare. Sometimes I could only return during <u>Christmas or New Year</u>. Whenever I came home, I did not rest. I wanted to spend every moment helping my parents.
+</p>
+
+<p>
+My parents were not able to give many material things, but when they did, those gifts meant everything to me. I remember the phone they gave me worth only <strong>₱1,500</strong>. It was simple, but it was the first gift I received from them. I still keep it and use it today. My shoes and my belongings are the same. I keep them until they can no longer work.
+</p>
+
+<p>
+Every item reminds me of <strong>my parents’ sacrifices and love</strong>.
+</p>
+
+<p>
+Years passed and I continued working, studying, and learning how to survive on my own. Being separated from my parents made me hold tightly to the memories I had with them: the forest, the farms, planting corn, gathering copra, and working in the garden.
+</p>
+
+<p>
+One of the most painful moments was when my mother once said to me:
+</p>
+
+<blockquote>
+<p><em>“You left me because you do not love me anymore.”</em></p>
+</blockquote>
+
+<p>
+Those words hurt deeply. I answered her:
+</p>
+
+<blockquote>
+<p><strong>“Nanay, I did not leave because I wanted to. I left because life wanted something for me. And when that beautiful day comes, I will always come back and stay with you again.”</strong></p>
+</blockquote>
+
+<p>
+For many years I worked, studied, and slowly built my path through <strong>entrepreneurship and education</strong>. Today I am on my college journey. Not in my town. Not in my province. But far away from home, here in <u>Manila</u>.
+</p>
+
+<p>
+Every step I take now carries the sacrifices of my parents, the laughter of my mother in the forest, the quiet mountains that once watched me work, and the love I have for my sisters.
+</p>
+
+<p>
+My story began with almost nothing.
+</p>
+
+<p>
+But sometimes, <strong>when the world gives you nothing, it also gives you the greatest space to build everything.</strong>
+</p>
+
+<p><em>And I am still building.</em></p>
+
+`
 }
 ];
