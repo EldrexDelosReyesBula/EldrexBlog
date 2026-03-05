@@ -1030,7 +1030,7 @@ title: "When the World Gives You Nothing, You Have the Most Room to Build Everyt
 image: BASE_IMAGE_URL + "post/build-everything.jpg",
 placeholderImage: getPlaceholder(34),
 date: "March 6, 2026",
-category: "Personal Reflection",
+category: "Reflection",
 excerpt: "A reflection on growing up in hardship, helping family survive, and how those experiences shaped resilience, gratitude, and purpose.",
 content: `
 <p><em>"When the world gives you nothing, you have the most room to build everything."</em></p>
