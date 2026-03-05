@@ -1027,7 +1027,7 @@ content:   `
 {
 id: 34,
 title: "When the World Gives You Nothing, You Have the Most Room to Build Everything",
-image: BASE_IMAGE_URL + "post/build-everything.png",
+image: BASE_IMAGE_URL + "post/build-everything.jpg",
 placeholderImage: getPlaceholder(34),
 date: "March 6, 2026",
 category: "Personal Reflection",
