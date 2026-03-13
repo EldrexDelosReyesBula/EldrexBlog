@@ -1148,10 +1148,10 @@ But sometimes, <strong>when the world gives you nothing, it also gives you the g
 `
 },
 {
-  id: 39,
+  id: 35,
   title: "When Winning Does Not Feel Like Winning",
   image: BASE_IMAGE_URL + "post/unsatisfied.gif",
-  placeholderImage: getPlaceholder(39),
+  placeholderImage: getPlaceholder(35),
   date: "March 8, 2026",
   category: "Reflection",
   excerpt: "Sometimes we finally achieve what we once wished for, yet the joy we expected is replaced with a quiet feeling of wanting something greater.",
@@ -1173,6 +1173,69 @@ But sometimes, <strong>when the world gives you nothing, it also gives you the g
 <p>So if there are moments when you finally reach something you once prayed or worked for, yet you still feel unsatisfied, remember this: <strong>it does not mean your effort was meaningless.</strong> It only means your vision has expanded.</p>
 
 <p>And people whose vision keeps expanding are often the ones who eventually build things far greater than what they first imagined.</p>
+`
+},
+{
+id: 36,
+title: "A Stranger Who Chose to Lead",
+image: BASE_IMAGE_URL + "post/stranger-who-chose-to-lead.png",
+placeholderImage: getPlaceholder(36),
+date: "March 13, 2026",
+category: "Reflection",
+excerpt: "From being a stranger in Manila to becoming Vice President of the Integrated Computer Society, this journey reflects courage, growth, and the willingness to lead despite uncertainty.",
+content:   `
+<p>
+Living in a new city can make anyone feel like a stranger. When I first arrived in Manila, everything felt unfamiliar. I did not know many people, and I had only been here for about <strong>five months</strong>. Despite that, an unexpected opportunity appeared in front of me.
+</p>
+
+<p>
+I found myself becoming part of the 
+<strong>Integrated Computer Society (ICS)</strong> at 
+<a href="https://www.navotaspolytechniccollege.edu.ph" target="_blank">
+Navotas Polytechnic College
+</a>. 
+At first, I never imagined taking a leadership role. In fact, the position I initially asked for was <strong>Auditor</strong>. But as things unfolded, the opportunity shifted, and I was given the chance to run for <strong>Vice President</strong>.
+</p>
+
+<p>
+It was a coincidence, but also a challenge I decided to accept.
+</p>
+
+<p>
+For someone like me, who had no real experience in <u>community leadership</u>, the idea of becoming a vice president felt both exciting and intimidating. Leadership is not only about having a title. It is about <strong>responsibility, commitment, communication, and the courage to work with people you may not even know yet</strong>.
+</p>
+
+<p>
+On <strong>March 3</strong>, our partylist officially formed. The team included different roles, from the <strong>President</strong> to the <strong>Business Manager</strong>, each person bringing their own skills and hopes for the organization.
+</p>
+
+<p>
+Along the way, the process was not perfect. Some candidates who wanted to become officers were <em>disqualified</em>, while others continued the journey. It was a reminder that <strong>leadership paths are rarely smooth</strong>.
+</p>
+
+<p>
+For me, this experience is more than just a position. It is a moment of growth.
+</p>
+
+<p>
+Being a stranger in a new city taught me to step outside my comfort zone. It forced me to communicate with people, build connections, and expose myself to situations that once felt unfamiliar. Through this opportunity, I am learning what it means to <strong>serve a community</strong>, even if I started as someone who barely knew anyone.
+</p>
+
+<blockquote>
+<strong>"Fail early, learn early, and win early."</strong>
+</blockquote>
+
+<p>
+I believe this journey is part of a bigger lesson that God has allowed me to experience. Every mistake will become a teacher, and every challenge will become a step toward growth.
+</p>
+
+<p>
+I may not have years of leadership experience, but I have something just as important: <strong>the willingness to learn, the courage to try, and the commitment to serve</strong>.
+</p>
+
+<p>
+Sometimes, the most meaningful leaders begin their journey as <em>strangers</em>.
+</p>
 `
 }
 ];
