@@ -216,29 +216,43 @@ const BlogModal: React.FC<BlogModalProps> = ({ post, onClose, onSelectPost }) =>
     setIsGeneratingImage(true);
     
     try {
+      // Create a temporary container to hold the content for capturing
+      // This helps in capturing the full height without scrollbars
       const canvas = await html2canvas(contentRef.current, {
         backgroundColor: document.documentElement.classList.contains('dark') ? '#0f172a' : '#ffffff',
-        scale: 2,
+        scale: 3, // Higher resolution
         logging: false,
         useCORS: true,
+        allowTaint: true,
         windowWidth: 800,
+        height: contentRef.current.scrollHeight,
         onclone: (clonedDoc) => {
           const element = clonedDoc.getElementById('blog-content-area');
           if (element) {
-            element.style.padding = '40px';
             element.style.height = 'auto';
             element.style.overflow = 'visible';
+            element.style.width = '800px';
+            element.style.padding = '60px 40px';
+            element.style.borderRadius = '0'; // Keep it clean for full capture
+            
+            // Ensure all images are loaded in the clone
+            const images = element.getElementsByTagName('img');
+            for (let i = 0; i < images.length; i++) {
+              images[i].style.display = 'block';
+              images[i].style.maxWidth = '100%';
+              images[i].style.borderRadius = '16px';
+            }
           }
         }
       });
       
-      const image = canvas.toDataURL('image/png');
+      const image = canvas.toDataURL('image/png', 1.0);
       const link = document.createElement('a');
       link.href = image;
-      link.download = `${post.title.replace(/\s+/g, '-').toLowerCase()}-preview.png`;
+      link.download = `${post.title.replace(/\s+/g, '-').toLowerCase()}-full-preview.png`;
       link.click();
       
-      trackEvent('generate_image_preview', { post_id: post.id });
+      trackEvent('generate_image_preview', { post_id: post.id, type: 'full' });
     } catch (error) {
       console.error('Error generating image preview:', error);
     } finally {
@@ -253,6 +267,16 @@ const BlogModal: React.FC<BlogModalProps> = ({ post, onClose, onSelectPost }) =>
       if (contentRef.current) contentRef.current.scrollTop = 0;
       setIsScrolled(false);
       
+      // Reset post-specific states
+      setRating(0);
+      setAvgRating(0);
+      setTotalRatings(0);
+      setIsSaved(false);
+      setHighlights([]);
+      setReadMode(false);
+      setIsReadingAloud(false);
+      setIsPaused(false);
+
       const sameCategory = BLOG_POSTS.filter(p => p.category === post.category && p.id !== post.id);
       const others = BLOG_POSTS.filter(p => p.category !== post.category && p.id !== post.id);
       const recs = [...sameCategory, ...others].slice(0, 3);
