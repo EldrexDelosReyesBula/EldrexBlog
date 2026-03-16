@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "PostRating": {
+      "title": "Post Rating",
+      "description": "User ratings for blog posts",
+      "type": "object",
+      "properties": {
+        "postId": { "type": "integer", "description": "ID of the post" },
+        "rating": { "type": "integer", "description": "Rating value (1-5)" },
+        "userId": { "type": "string", "description": "Anonymous user ID" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["postId", "rating", "userId", "timestamp"]
+    },
+    "UserSave": {
+      "title": "User Save",
+      "description": "Posts saved by users",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "postId": { "type": "integer" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "postId", "timestamp"]
+    },
+    "UserHighlight": {
+      "title": "User Highlight",
+      "description": "Text highlights made by users on posts",
+      "type": "object",
+      "properties": {
+        "postId": { "type": "integer" },
+        "userId": { "type": "string" },
+        "text": { "type": "string" },
+        "color": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["postId", "userId", "text", "timestamp"]
+    },
+    "PostAnalytics": {
+      "title": "Post Analytics",
+      "description": "Aggregated analytics for posts",
+      "type": "object",
+      "properties": {
+        "postId": { "type": "integer" },
+        "views": { "type": "integer" },
+        "totalTimeSpent": { "type": "integer" }
+      },
+      "required": ["postId"]
+    }
+  },
+  "firestore": {
+    "/ratings/{ratingId}": {
+      "schema": "PostRating",
+      "description": "Collection of post ratings"
+    },
+    "/saves/{saveId}": {
+      "schema": "UserSave",
+      "description": "Collection of saved posts"
+    },
+    "/highlights/{highlightId}": {
+      "schema": "UserHighlight",
+      "description": "Collection of user highlights"
+    },
+    "/analytics/{postId}": {
+      "schema": "PostAnalytics",
+      "description": "Aggregated analytics per post"
+    }
+  }
+}

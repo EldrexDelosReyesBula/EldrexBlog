@@ -7,6 +7,7 @@ export interface BlogPost {
   category: string;
   excerpt: string;
   content: string;
+  copyright: boolean;
 }
 
 export type Category = string;

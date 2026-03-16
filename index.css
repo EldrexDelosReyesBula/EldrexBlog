@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --md-sys-color-primary: #ff0557;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffd9e2;
+    --md-sys-color-on-primary-container: #3e0010;
+    
+    --md-sys-color-secondary: #76565d;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #ffd9e0;
+    --md-sys-color-on-secondary-container: #2c151a;
+    
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #201a1b;
+    --md-sys-color-surface-variant: #f4dddf;
+    --md-sys-color-on-surface-variant: #524345;
+    
+    --md-sys-color-outline: #847375;
+  }
+
+  .dark {
+    --md-sys-color-primary: #ffb1c1;
+    --md-sys-color-on-primary: #66001e;
+    --md-sys-color-primary-container: #8e002c;
+    --md-sys-color-on-primary-container: #ffd9e2;
+    
+    --md-sys-color-secondary: #e5bdc4;
+    --md-sys-color-on-secondary: #43292f;
+    --md-sys-color-secondary-container: #5c3f45;
+    --md-sys-color-on-secondary-container: #ffd9e0;
+    
+    --md-sys-color-surface: #201a1b;
+    --md-sys-color-on-surface: #ece0e1;
+    --md-sys-color-surface-variant: #524345;
+    --md-sys-color-on-surface-variant: #d7c2c4;
+    
+    --md-sys-color-outline: #a08c8e;
+  }
+
+  body {
+    @apply bg-[var(--md-sys-color-surface)] text-[var(--md-sys-color-on-surface)] transition-colors duration-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .m3-card {
+    @apply bg-[var(--md-sys-color-surface-variant)] rounded-m3-xl p-6 transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .m3-button-filled {
+    @apply bg-[var(--md-sys-color-primary)] text-[var(--md-sys-color-on-primary)] px-6 py-3 rounded-m3-full font-medium transition-all hover:opacity-90 active:scale-95;
+  }
+
+  .m3-button-tonal {
+    @apply bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] px-6 py-3 rounded-m3-full font-medium transition-all hover:opacity-90 active:scale-95;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 dark:bg-slate-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300 dark:bg-slate-700;
+}
+
+/* Selection Highlight */
+::selection {
+  @apply bg-brand-200/50 dark:bg-brand-900/50;
+}
+
+/* Typography Utilities */
+.text-display-large {
+  @apply text-5xl md:text-7xl font-serif font-bold tracking-tight leading-tight;
+}
+
+.text-headline-medium {
+  @apply text-2xl md:text-3xl font-serif font-semibold;
+}
+
+.text-body-large {
+  @apply text-lg leading-relaxed;
+}
+
+/* Physics-based animations helper */
+.spring-transition {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

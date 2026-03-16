@@ -12,10 +12,17 @@ import ConsentModal from './components/ConsentModal';
 import SettingsModal from './components/SettingsModal';
 import SupportBanner from './components/SupportBanner';
 import StaticPage, { PageType } from './components/StaticPage';
-import InFeedAd from './components/InFeedAd';
+import NotFound from './components/NotFound';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Sparkles, BookOpen, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Sparkles, BookOpen, Search, MoreVertical, Share2, Bookmark, Highlighter, Type } from 'lucide-react';
 import { Analytics } from "@vercel/analytics/react";
+import { initAuth } from './firebase';
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 const ITEMS_PER_PAGE = 6;
 type ViewState = 'home' | PageType;
@@ -57,6 +64,7 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [isNotFound, setIsNotFound] = useState(false);
   
   // Support Banner Logic
   const [showSupportBanner, setShowSupportBanner] = useState(false);
@@ -88,6 +96,12 @@ const App: React.FC = () => {
      setSettingsOpen(true);
   };
 
+  const [isAuthReady, setIsAuthReady] = useState(false);
+
+  useEffect(() => {
+    initAuth().then(() => setIsAuthReady(true));
+  }, []);
+
   // Keyboard Navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -116,6 +130,16 @@ const App: React.FC = () => {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [currentPage, selectedPostId, settingsOpen, currentView]);
+
+  useEffect(() => {
+    const handleNavigateEvent = (e: any) => {
+      if (e.detail) {
+        handleNavigate(e.detail);
+      }
+    };
+    window.addEventListener('navigate-to-page', handleNavigateEvent);
+    return () => window.removeEventListener('navigate-to-page', handleNavigateEvent);
+  }, []);
 
   // Simulate initial data load animation
   useEffect(() => {
@@ -164,6 +188,14 @@ const App: React.FC = () => {
   };
 
   const handlePostClick = (id: number) => {
+    const postExists = BLOG_POSTS.some(p => p.id === id);
+    if (!postExists) {
+      setIsNotFound(true);
+      setSelectedPostId(null);
+      return;
+    }
+    
+    setIsNotFound(false);
     setSelectedPostId(id);
     
     // Increment read count
@@ -219,7 +251,14 @@ const App: React.FC = () => {
     if (postId) {
       const id = parseInt(postId, 10);
       if (!isNaN(id)) {
-        setSelectedPostId(id);
+        const postExists = BLOG_POSTS.some(p => p.id === id);
+        if (postExists) {
+          setSelectedPostId(id);
+          setIsNotFound(false);
+        } else {
+          setIsNotFound(true);
+          setSelectedPostId(null);
+        }
       }
     }
   }, []);
@@ -253,11 +292,11 @@ const App: React.FC = () => {
       }
       ogImage.setAttribute('content', selectedPost.image || selectedPost.placeholderImage);
       
-    } else {
+    } else if (!isNotFound) {
       window.history.pushState({}, '', window.location.pathname);
       document.title = 'Eldrex Writings | Insights & Reflections';
     }
-  }, [selectedPost]);
+  }, [selectedPost, isNotFound]);
 
   const popularPosts = useMemo(() => {
     const postViewsStr = localStorage.getItem('eldrex_post_views') || '{}';
@@ -285,8 +324,18 @@ const App: React.FC = () => {
     return [...BLOG_POSTS].sort(() => 0.5 - Math.random()).slice(0, 3);
   }, [selectedPostId]); // Re-calculate when a post is clicked
 
+  const handleBackToHome = () => {
+    setIsNotFound(false);
+    setCurrentView('home');
+    window.history.pushState({}, '', window.location.pathname);
+  };
+
+  if (isNotFound) {
+    return <NotFound onBackToHome={handleBackToHome} />;
+  }
+
   return (
-                    <div className="min-h-screen flex flex-col text-slate-900 dark:text-slate-100 bg-background/50 dark:bg-slate-900 selection:bg-brand-200 selection:text-brand-900 dark:selection:bg-brand-900 dark:selection:text-brand-100 transition-colors duration-300">
+                    <div className="min-h-screen flex flex-col text-slate-900 dark:text-slate-100 bg-background/50 dark:bg-slate-900 selection:bg-brand-200 selection:text-brand-900 dark:selection:bg-brand-900 dark:selection:text-brand-100 transition-colors duration-300" role="application">
       <Header 
         isHome={currentView === 'home'}
         onOpenSettings={() => setSettingsOpen(true)} 
@@ -412,19 +461,12 @@ const App: React.FC = () => {
                   ))
                 ) : currentPosts.length > 0 ? (
                   currentPosts.map((post, index) => (
-                    <React.Fragment key={post.id}>
-                      <BlogCard 
-                        post={post} 
-                        onClick={handlePostClick} 
-                        index={index} 
-                      />
-                      {/* Inject Ad after 3rd item */}
-                      {index === 2 && (
-                        <div className="h-full">
-                          <InFeedAd className="h-full" />
-                        </div>
-                      )}
-                    </React.Fragment>
+                    <BlogCard 
+                      key={post.id}
+                      post={post} 
+                      onClick={handlePostClick} 
+                      index={index} 
+                    />
                   ))
                 ) : (
                   <motion.div 
@@ -495,39 +537,31 @@ const App: React.FC = () => {
                 </div>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                  {popularPosts.map((post, idx) => (
-                    <React.Fragment key={post.id}>
-                      <motion.div 
-                        whileHover={{ y: -4 }}
-                        onClick={() => handlePostClick(post.id)}
-                        className="group cursor-pointer flex gap-4 items-center bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-brand-200 dark:hover:border-brand-700 hover:shadow-lg hover:shadow-brand-100/50 dark:hover:shadow-none transition-all duration-300 h-full"
-                      >
-                        <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100 dark:bg-slate-700 relative">
-                          <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10"/>
-                          <img 
-                            src={post.image || post.placeholderImage} 
-                            alt={post.title} 
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </div>
-                        <div>
-                          <span className="text-[10px] font-extrabold text-brand-600 dark:text-brand-400 uppercase tracking-widest">{post.category}</span>
-                          <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-700 dark:group-hover:text-brand-400 transition-colors line-clamp-2 mt-1.5 leading-snug">
-                            {post.title}
-                          </h4>
-                          <div className="mt-2 text-xs text-slate-400 dark:text-slate-500 font-medium">{post.date}</div>
-                        </div>
-                      </motion.div>
-                      
-                      {/* Inject Ad after 2nd popular story */}
-                      {idx === 1 && (
-                         <div className="h-full">
-                           <InFeedAd className="min-h-[140px] h-full" showBadge={true} />
-                         </div>
-                      )}
-                    </React.Fragment>
+                  {popularPosts.map((post) => (
+                    <motion.div 
+                      key={post.id}
+                      whileHover={{ y: -4 }}
+                      onClick={() => handlePostClick(post.id)}
+                      className="group cursor-pointer flex gap-4 items-center bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-brand-200 dark:hover:border-brand-700 hover:shadow-lg hover:shadow-brand-100/50 dark:hover:shadow-none transition-all duration-300 h-full"
+                    >
+                      <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100 dark:bg-slate-700 relative">
+                        <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10"/>
+                        <img 
+                          src={post.image || post.placeholderImage} 
+                          alt={post.title} 
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div>
+                        <span className="text-[10px] font-extrabold text-brand-600 dark:text-brand-400 uppercase tracking-widest">{post.category}</span>
+                        <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100 group-hover:text-brand-700 dark:group-hover:text-brand-400 transition-colors line-clamp-2 mt-1.5 leading-snug">
+                          {post.title}
+                        </h4>
+                        <div className="mt-2 text-xs text-slate-400 dark:text-slate-500 font-medium">{post.date}</div>
+                      </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>

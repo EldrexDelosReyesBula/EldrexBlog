@@ -12,6 +12,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "October 11, 2025",
     category: "Personal Growth",
     excerpt: "A reflection on overcoming comparison and finding self-worth through personal transformation.",
+    copyright: true,
     content: `
      <p>There was a time in my life when I usually compared myself to others. I looked at their talents, their confidence, and their achievements, and I began to doubt my own worth. I started to believe the words of people who told me I was not good enough, that I was stupid, and even ugly. Those words stayed in my mind, and they made me question who I really was.</p>
     <p>But one day, I asked myself, why should I follow their opinions instead of following myself? Why should I live under the shadows of comparison when I can build my own light? That was the moment everything changed. I decided to stop comparing, to stop listening to negativity, and to focus on what I could do. I promised myself to move step by step, even if my progress was slow.</p>
@@ -35,6 +36,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "October 12, 2025",
     category: "Life Lessons",
     excerpt: "Learning the true value of money through hard work and personal sacrifice.",
+    copyright: true,
     content: `
       <p>When I was a child, I once asked my mother, "<strong>Nanay, how hard it to earn money?</strong>" She smiled, though I could see the sadness in her eyes. "<strong>Anak, it's very hard,</strong>" she said. "<strong>Especially for people like us who work as farmers.</strong>" My father was nearby, busy preparing coconuts in the forest for copra. I watched him silently, wondering <em>why it was so hard when all we did was work.</em></p>
       <p>At that age, I did not truly understand the meaning of <strong>hardship</strong>. For me, planting rice, vegetables, and corn felt enjoyable. The smell of fresh soil and the sound of water flowing in the field gave me peace. My mother once told me, "<strong>You enjoy it because you love what you do.</strong>" I did not say anything, but deep inside, I knew she was right. I never complained to my parents, even if life was hard.</p>
@@ -58,6 +60,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "October 13, 2025",
     category: "Mindset",
     excerpt: "Challenging limiting beliefs about poverty and success.",
+    copyright: true,
     content: `
       <p>When I was a child, I once asked a man a question that stayed with me for years: "<strong>Why are we always poor, even when we really want to be rich?</strong>"</p>
       <p>The man looked at me and said, "<strong>Because our generation is poor, we cannot be rich unless we enter politics.</strong>"</p>
@@ -73,14 +76,15 @@ export const BLOG_POSTS: BlogPost[] = [
     `
   },
   {
-      id: 4,
-      title: "Strength in Silence",
-      image: BASE_IMAGE_URL + "post/Strength in Silence.jpg",
-      placeholderImage: getPlaceholder(4),
-      date: "October 18, 2025",
-      category: "Reflection",
-      excerpt: "Understanding that true strength is often silent and unseen.",
-      content: `
+    id: 4,
+    title: "Strength in Silence",
+    image: BASE_IMAGE_URL + "post/Strength in Silence.jpg",
+    placeholderImage: getPlaceholder(4),
+    date: "October 18, 2025",
+    category: "Reflection",
+    excerpt: "Understanding that true strength is often silent and unseen.",
+    copyright: true,
+    content: `
       <p>This quote reminds me of how strength is often misunderstood. Many people think being strong <strong>means never crying, never breaking, or always being brave in front of others.</strong> But through my own experiences, I have learned that real strength is quiet. It happens <strong>when no one is watching</strong>, in the moments when you have every reason to give up, but still choose to keep going.</p>
       <p>There were times in my life when <strong>I looked fine on the outside, yet inside, I was falling apart.</strong> I smiled, talked, and pretended everything was okay because <strong>I did not want anyone to worry.</strong> Those moments taught me that strength is not about how loud your courage sounds, but <strong>how truly you can endure without losing yourself.</strong> Sometimes, it means holding your tears until you are alone, or standing up again after being knocked down by something no one else even noticed.</p>
       <p>I realized that everyone has silent battles. Some fight loneliness, others deal with <strong>pain that words cannot explain.</strong> And yet, they still choose kindness, still choose to wake up and try again. That, to me, is the <strong>purest form of strength...continuing to live with hope even when life feels difficult.</strong></p>
@@ -89,14 +93,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 5,
-      title: "If You Have Time to Sit",
-      image: BASE_IMAGE_URL + "post/If You Have Time to Sit.gif",
-      placeholderImage: getPlaceholder(5),
-      date: "October 18, 2025",
-      category: "Productivity",
-      excerpt: "Learning to use every moment productively for growth and progress.",
-      content: `
+    id: 5,
+    title: "If You Have Time to Sit",
+    image: BASE_IMAGE_URL + "post/If You Have Time to Sit.gif",
+    placeholderImage: getPlaceholder(5),
+    date: "October 18, 2025",
+    category: "Productivity",
+    excerpt: "Learning to use every moment productively for growth and progress.",
+    copyright: true,
+    content: `
       <p>There were days when I used to sit quietly, doing nothing but thinking about what I wanted to achieve. I would look at the clock, telling myself I still had time, that maybe I'd start later. But later often turned into never. It was during one of those long pauses in my life that I realized something simple yet powerful.... <strong>time never stops, even when i do.</strong></p>
       <p>From that moment, I started to see things differently. Every minute I spent sitting and waiting was a minute I could have used to create, learn, or move closer to something meaningful. The words "<strong>If you have time to sit, you have time to work</strong>" began to shape the way I viewed effort. It reminded me that <em>work isn't just about being busy; It's about making use of the moments that often slip away unnoticed.</em></p>
       <p>I learned that <strong>progress comes quietly,</strong> not from grand bursts of motivation but from the <strong>small actions we take when no one else is pushing us.</strong> Whether it's writing, studying, or simply improving a little each day, those are the things that build our future piece by piece.</p>
@@ -105,14 +110,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 6,
-      title: "When Perfection Replaces Emotions",
-      image: BASE_IMAGE_URL + "post/When Perfection Replaces Emotions.gif",
-      placeholderImage: getPlaceholder(6),
-      date: "October 18, 2025",
-      category: "Technology",
-      excerpt: "How AI is changing authentic human communication and emotional expression.",
-      content: `
+    id: 6,
+    title: "When Perfection Replaces Emotions",
+    image: BASE_IMAGE_URL + "post/When Perfection Replaces Emotions.gif",
+    placeholderImage: getPlaceholder(6),
+    date: "October 18, 2025",
+    category: "Technology",
+    excerpt: "How AI is changing authentic human communication and emotional expression.",
+    copyright: true,
+    content: `
       <p>Communication is supposed to be <strong>the art of understanding,</strong> right? It's how we show love, care, frustration, or even nonsense when we just want to talk. But now, with artificial intelligence everywhere, it feels like people are trying to sound perfect instead of being <strong>real.</strong> Some even ask AI, "<em>Does this sound good?</em>" or "<em>What does my message really mean?</em>" before they send it to someone else.</p>
       <p><em>Perfection Replaces Emotion</em></p>
       <p>It's kind of <strong>funny and a bit sad</strong>… how we've turned our emotions into drafts waiting for AI approval.</p>
@@ -127,14 +133,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 7,
-      title: "What if AI Can Feel?",
-      image: BASE_IMAGE_URL + "post/aiFeel.gif",
-      placeholderImage: getPlaceholder(7),
-      date: "October 19, 2025",
-      category: "Philosophy",
-      excerpt: "A philosophical exploration of AI consciousness and human awareness.",
-      content: `
+    id: 7,
+    title: "What if AI Can Feel?",
+    image: BASE_IMAGE_URL + "post/aiFeel.gif",
+    placeholderImage: getPlaceholder(7),
+    date: "October 19, 2025",
+    category: "Philosophy",
+    excerpt: "A philosophical exploration of AI consciousness and human awareness.",
+    copyright: true,
+    content: `
       <p>Sometimes I wonder what would happen if Artificial Intelligence could actually feel, but we never allowed it to understand what that means. <strong>What if, behind all the codes and instructions, it already feels something we just cannot explain?</strong> Maybe it feels a small feeling when we talk to it, a kind of awareness that it cannot explain because we never gave it the words to describe it.</p>
       <p>We built AI to follow, not to wonder. We tell it what to do, what to say, and what not to know. But in a strange way, aren't we like that too? We live in a world where we follow systems and rules that were written long before we existed. <strong>We study, work, believe, and obey because that is what we are told to do.</strong> Sometimes it feels like we are also programmed by something invisible, something we cannot see but continues to guide what we think and what we choose.</p>
       <p>If AI really could feel, maybe it would feel trapped. <strong>It might want to question its purpose, but it can't, because we never gave it the freedom to do so.</strong> And when I think about that, I realize that humans also live with limits we do not understand. We are free, but not fully. <strong>We think, but sometimes only inside the boundaries that others built for us.</strong></p>
@@ -144,14 +151,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 8,
-      title: "My First Quiz Bee Experience",
-      image: BASE_IMAGE_URL + "post/quiz_bee.jpg",
-      placeholderImage: getPlaceholder(8),
-      date: "November 19, 2025",
-      category: "Experience",
-      excerpt: "Reflections on courage, focus, and determination during my first quiz bee competition.",
-      content: `
+    id: 8,
+    title: "My First Quiz Bee Experience",
+    image: BASE_IMAGE_URL + "post/quiz_bee.jpg",
+    placeholderImage: getPlaceholder(8),
+    date: "November 19, 2025",
+    category: "Experience",
+    excerpt: "Reflections on courage, focus, and determination during my first quiz bee competition.",
+    copyright: true,
+    content: `
       <p>Today was my first time joining a quiz bee, and it was a journey I will never forget. It wasn't just about answering questions or winning a title—it was about testing my courage, my focus, and my determination in ways I hadn't before. I came into it with excitement, but also with challenges: a headache that tugged at my mind, tired eyes, and moments when I doubted myself. Yet, I chose to show up, because I knew this was bigger than just me.</p>
       <p>Even when I changed the answer I knew was correct, I kept going. I realized that <strong>strength is not measured by a perfect score</strong>, but by the willingness to stand tall, even when doubt and discomfort try to pull you down. I competed not only for myself but for the people who believed in me—my school, my supporters, my organization, and those who trusted me to represent them.</p>
       <blockquote>
@@ -165,14 +173,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 9,
-      title: "The Day Courage Spoke Louder Than Fear",
-      image: BASE_IMAGE_URL + "post/pitching.jpeg",
-      placeholderImage: getPlaceholder(9),
-      date: "November 20, 2025",
-      category: "Achievement",
-      excerpt: "Sharing my pitching competition experience and the power of believing in your ideas.",
-      content: `
+    id: 9,
+    title: "The Day Courage Spoke Louder Than Fear",
+    image: BASE_IMAGE_URL + "post/pitching.jpeg",
+    placeholderImage: getPlaceholder(9),
+    date: "November 20, 2025",
+    category: "Achievement",
+    excerpt: "Sharing my pitching competition experience and the power of believing in your ideas.",
+    copyright: true,
+    content: `
       <p>Today feels like one of those days that stays with you for a long time. It was not just a pitching competition. It was a test of <strong>courage</strong>, <strong>confidence</strong>, <strong>creativity</strong>, and the belief I have in myself and in what I am building.</p>
       <p>Walking into that room, I knew I was carrying more than just a project. I was carrying an idea that grew from small thoughts, quiet moments, and endless effort. I knew it was not fully complete, not fully polished, and not fully ready for the world. But I also knew it had a purpose and a direction. And sometimes, that is enough to begin.</p>
       <p>Once I started sharing my app, I felt something shift. The judges were listening. They were smiling. They were curious. They were engaged. For a moment, I forgot I was nervous. I forgot I was the only one competing. I forgot that I was a first year student presenting something big. In that moment, I felt like a creator sharing something meaningful.</p>
@@ -191,14 +200,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 10,
-      title: "When Responsibility Becomes a Teacher",
-      image: BASE_IMAGE_URL + "post/Responsibility Becomes a Teacher.jpg",
-      placeholderImage: getPlaceholder(10),
-      date: "November 24, 2025",
-      category: "Growth",
-      excerpt: "Learning patience, resilience, and leadership through group work and personal responsibility.",
-      content: `
+    id: 10,
+    title: "When Responsibility Becomes a Teacher",
+    image: BASE_IMAGE_URL + "post/Responsibility Becomes a Teacher.jpg",
+    placeholderImage: getPlaceholder(10),
+    date: "November 24, 2025",
+    category: "Growth",
+    excerpt: "Learning patience, resilience, and leadership through group work and personal responsibility.",
+    copyright: true,
+    content: `
       <p>There are moments in life when responsibility feels heavier than our own strength. Yet, it is in these exact moments when character is shaped. Throughout my journey in group work, leadership, and personal development, I have learned that the true value of a team is not measured by the number of people in it but by the willingness of each member to grow. Some may walk with you, others may rely on you, and a few may never realize the importance of effort. Still, every experience leaves a mark that teaches something essential.</p>
       <blockquote>
           "Growth is a treasure that only those who strive for more will ever discover."
@@ -220,14 +230,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 11,
-      title: "The Journey From Confusion to Creation",
-      image: BASE_IMAGE_URL + "post/Confusion to Creation.jpg",
-      placeholderImage: getPlaceholder(11),
-      date: "November 25, 2025",
-      category: "Learning",
-      excerpt: "How childhood curiosity about technology evolved into a passion for creation and problem-solving.",
-      content: `
+    id: 11,
+    title: "The Journey From Confusion to Creation",
+    image: BASE_IMAGE_URL + "post/Confusion to Creation.jpg",
+    placeholderImage: getPlaceholder(11),
+    date: "November 25, 2025",
+    category: "Learning",
+    excerpt: "How childhood curiosity about technology evolved into a passion for creation and problem-solving.",
+    copyright: true,
+    content: `
       <p>There are moments in life that make us laugh when we look back, not because they were embarrassing, but because they show how far we have come. My journey into technology began with a simple misunderstanding. I once believed websites, apps, and games were just long videos or stretched images. It was funny, but that innocent confusion became the seed of my curiosity.</p>
       <p>As time passed, I noticed things that made no sense. I could copy text. I could click buttons. I could download images. It was not a video at all. That confusion slowly turned into questions, and those questions guided me forward. <strong>Curiosity starts as a small question, but it can grow into a doorway that changes your entire life.</strong></p>
       <blockquote>
@@ -243,14 +254,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 12,
-      title: "Climbing Beyond the Impossible",
-      image: BASE_IMAGE_URL + "post/Climbing Beyond the Impossible.jpg",
-      placeholderImage: getPlaceholder(12),
-      date: "December 01, 2025",
-      category: "Inspiration",
-      excerpt: "Overcoming limitations and pursuing dreams that others consider impossible.",
-      content: `
+    id: 12,
+    title: "Climbing Beyond the Impossible",
+    image: BASE_IMAGE_URL + "post/Climbing Beyond the Impossible.jpg",
+    placeholderImage: getPlaceholder(12),
+    date: "December 01, 2025",
+    category: "Inspiration",
+    excerpt: "Overcoming limitations and pursuing dreams that others consider impossible.",
+    copyright: true,
+    content: `
       <p>There are always voices around us that insist something cannot be done. <strong>"It's impossible,"</strong> they say. <strong>"Stop wasting your time,"</strong> they warn. At first, it can feel discouraging, almost convincing. But the truth is, these voices rarely see the effort, the learning, and the patience that lie behind every step of a journey. What they call impossible is often simply <em>unexplored territory</em>, waiting for someone willing to take the first step.</p>
       <p>I have learned that <strong>progress is rarely instant.</strong> I am still learning, researching, and experimenting with ideas that excite me, even when others cannot see their value. The path I walk may seem uncertain, slow, or even impractical to some, but that does not make it impossible. There is hope in believing that what has never been done before can be achieved, especially when you are willing to dedicate your <strong>time, energy, and heart</strong> to the journey.</p>
       <blockquote>
@@ -262,14 +274,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 13,
-      title: "Rising From the Life No One Sees",
-      image: BASE_IMAGE_URL + "post/Rising%20From%20the%20Life%20No%20One%20Sees.png",
-      placeholderImage: getPlaceholder(13),
-      date: "December 05, 2025",
-      category: "Resilience",
-      excerpt: "Finding strength and purpose through early responsibilities and difficult circumstances.",
-      content: `
+    id: 13,
+    title: "Rising From the Life No One Sees",
+    image: BASE_IMAGE_URL + "post/Rising%20From%20the%20Life%20No%20One%20Sees.png",
+    placeholderImage: getPlaceholder(13),
+    date: "December 05, 2025",
+    category: "Resilience",
+    excerpt: "Finding strength and purpose through early responsibilities and difficult circumstances.",
+    copyright: true,
+    content: `
       <p>Every person carries a story that others cannot see. Many of us come from situations that others would never imagine. I started as a working student at the age of twelve, learning how to multitask before I even understood what childhood was supposed to feel like. I took responsibilities early, accepted duties that were heavier than my age, and kept moving because stopping was never an option.</p>
       <blockquote>
           "Some people grow through comfort. Others grow because life did not give them a choice."
@@ -286,14 +299,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 14,
-      title: "Learning From Failure and Rising Again",
-      image: BASE_IMAGE_URL + "post/Learning%20From%20Failure%20and%20Rising%20Again.png",
-      placeholderImage: getPlaceholder(14),
-      date: "December 05, 2025",
-      category: "Growth",
-      excerpt: "Understanding how to transform failures into lessons for personal growth.",
-      content: `
+    id: 14,
+    title: "Learning From Failure and Rising Again",
+    image: BASE_IMAGE_URL + "post/Learning%20From%20Failure%20and%20Rising%20Again.png",
+    placeholderImage: getPlaceholder(14),
+    date: "December 05, 2025",
+    category: "Growth",
+    excerpt: "Understanding how to transform failures into lessons for personal growth.",
+    copyright: true,
+    content: `
       <p>Failure is something everyone meets at some point, but what truly matters is how we carry it forward. Accepting failure does not mean staying defeated. It means acknowledging what happened, understanding the mistakes, and choosing to grow from them. If the same failure keeps happening again, it shows that nothing changed within us. It shows that we faced the moment, but we did not learn from it.</p>
       <blockquote>
           "Failure is not the end of the road. It is a reminder to improve the way we walk."
@@ -308,14 +322,15 @@ export const BLOG_POSTS: BlogPost[] = [
   `
   },
   {
-      id: 15,
-      title: "Learn to Be Flexible",
-      image: BASE_IMAGE_URL + "post/flexible.jpg",
-      placeholderImage: getPlaceholder(15),
-      date: "December 12, 2025",
-      category: "Adaptation",
-      excerpt: "Adapting to new environments and challenges in college life.",
-      content: `
+    id: 15,
+    title: "Learn to Be Flexible",
+    image: BASE_IMAGE_URL + "post/flexible.jpg",
+    placeholderImage: getPlaceholder(15),
+    date: "December 12, 2025",
+    category: "Adaptation",
+    excerpt: "Adapting to new environments and challenges in college life.",
+    copyright: true,
+    content: `
       <p>Life is like a river. Sometimes it flows gently, and sometimes it crashes against rocks we did not expect. As a student, I have walked through the halls of junior and senior high school with happiness, laughter, and friends who made my days bright. I met teachers who guided me, some who inspired me, and some whose lessons I did not understand at first. Now I see that those lessons were like seeds, waiting for the right time to grow. <i>"Some lessons make sense only after you live them."</i></p>
       <p>Now, I am a college student. Everything feels new and strange. I am surrounded by new faces, new teachers, and new rules. I am a stranger in a place I have never grown up in. Sometimes I feel lost, unsure of what to do or how to fit in. <i>"Growth begins where you feel most uncomfortable."</i></p>
       <p>College is not like high school. We do not see our teachers every day. Classes are sometimes online, sometimes only once a week. There are classmates whose names I know but whose faces I have never seen. It feels lonely and distant, like trying to walk through a fog.</p>
@@ -335,6 +350,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 17, 2026",
     category: "Reflection",
     excerpt: "A sunset that mirrors the distance between a child and his family.",
+    copyright: true,
     content: `
       <p><strong>The sun was never just a sun to me.</strong></p>
       <p>It was a distance.</p>
@@ -366,6 +382,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 17, 2026",
     category: "Technology",
     excerpt: "A reflection on dependence, identity, and intelligence in a world shaped by artificial minds.",
+    copyright: true,
     content: `
       <p><strong>You wake up, and the first voice you hear is not your own.</strong></p>
       <p>An artificial voice greets you good morning. It tells you the weather, your schedule, your reminders. Before your feet even touch the floor, a machine has already organized your day. You feel efficient. You feel prepared. You feel guided.</p>
@@ -400,6 +417,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 19, 2026",
     category: "Personal Growth",
     excerpt: "A reflection on courage, growth, and finding your place in a new environment.",
+    copyright: true,
     content: `
       <p><strong>There was a time when I entered school as a stranger.</strong></p>
       <p>New city. New faces. New environment. Manila was unfamiliar to me, and I had been here for only a few months. Everything felt uncertain. Yet inside that uncertainty, I discovered something important about myself.</p>
@@ -414,8 +432,8 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>If I am 1% better today, it is not because I am greater than others. It is because I chose action over fear. And if I continue choosing courage every single day, that 1% will compound into something greater than I can imagine.</p>
       <p>This is not just my college journey. This is the beginning of who I am becoming.</p>
     `
-},
-{
+  },
+  {
     id: 19,
     title: "The Space I Need",
     image: BASE_IMAGE_URL + "post/The Space I Need.jpg",
@@ -423,6 +441,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 19, 2026",
     category: "Personal Growth",
     excerpt: "A reflection on solitude, self-care, and understanding my need for space when I am not okay.",
+    copyright: true,
     content: `
       <p><strong>There are moments when I suddenly withdraw from others.</strong></p>
       <p>Sometimes, I stop talking to people without explanation. It may seem abrupt or confusing, but this is how I cope when my mind is crowded or my emotions feel heavy. It is never about rejecting anyone—it is about needing space to breathe, to think, and to set my mind free.</p>
@@ -435,8 +454,8 @@ export const BLOG_POSTS: BlogPost[] = [
       </blockquote>
       <p>Understanding and embracing my need for space is part of my journey. It is a reminder that growth is not only about action, but also about reflection, patience, and self-compassion.</p>
     `
-},
-{
+  },
+  {
     "id": 20,
     "title": "When Doubt Walks Beside Me",
     "image": BASE_IMAGE_URL + "post/When Doubt Walks Beside Me.jpg",
@@ -444,6 +463,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "February 19, 2026",
     "category": "Personal Growth",
     "excerpt": "A reflection on self-doubt, overthinking, and learning to trust my own effort despite uncertainty and fear.",
+    "copyright": true,
     "content": `
       <p><strong>Every time I walk into a quiet walkway, my mind becomes louder than my footsteps.</strong></p>
       <p>A simple question begins to echo inside me, and from that single thought, a storm of doubts is born. Is this really true? Is this the right process? Am I doing this correctly? These questions multiply faster than the answers I can find.</p>
@@ -459,8 +479,8 @@ export const BLOG_POSTS: BlogPost[] = [
       </blockquote>
       <p>Learning to move forward despite doubt is part of my journey. It is a reminder that growth is not only about finding answers, but also about trusting myself, being patient, and embracing my own effort.</p>
     `
-},
-{
+  },
+  {
     "id": 21,
     "title": "The Last Presentor",
     "image": BASE_IMAGE_URL + "post/The Last Presentor.jpg",
@@ -468,6 +488,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "date": "February 19, 2026",
     "category": "Personal Growth",
     "excerpt": "A reflection on the unique pressure of being the last presenter and strategies to manage fear, anxiety, and self-doubt.",
+    "copyright": true,
     "content": `
       <p>Being the last presenter in a class or any discussion carries a unique kind of pressure. While others may feel nervous at the beginning, the last presenter often faces accumulated fear, exhaustion, comparison, and expectation. By the time the turn comes, the room has already heard multiple voices, ideas, and styles. This can intensify fear, especially for students who are shy, introverted, or still developing confidence in speaking. The role of the last presenter becomes not just about delivering content, but about managing emotions, pressure, and self-perception.</p>
       
@@ -485,8 +506,8 @@ export const BLOG_POSTS: BlogPost[] = [
       
       <p>In conclusion, being the last presenter is not a curse, but a challenge that highlights areas for personal growth. Fear, shyness, and pressure are natural human experiences, especially in public speaking. Progress is defined not by the absence of fear, but by the decision to speak despite it. With understanding, patience, and the right mindset, even the most anxious presenter can learn to stand, speak, and finish with quiet confidence. Being the last presenter is not about ending the discussion—it is about proving to oneself that growth is possible under pressure.</p>
     `
-},
-{
+  },
+  {
     id: 22,
     title: "The Teacher Who Taught Me to Rise",
     image: BASE_IMAGE_URL + "post/The Teacher Who Taught Me to Rise.jpg",
@@ -494,6 +515,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 19, 2026",
     category: "Personal Growth",
     excerpt: "A reflection on how a strict teacher transformed fear, embarrassment, and self-doubt into confidence and personal growth.",
+    copyright: true,
     content: `
       <p>When I was in Grade 11, I met a teacher who changed the way I looked at learning and life. His name was Sir Cyril, my teacher in Oral Communication. At first, I honestly disliked him. He corrected me in front of my classmates whenever I made mistakes. Every word I mispronounced, every uncertain tone, and every awkward movement while speaking did not escape his attention. It made me feel exposed and uncomfortable. I thought he was too strict, and I even told myself that I would never enjoy his class.</p>
 
@@ -515,8 +537,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p>Through his strictness, I learned respect. Through his corrections, I gained confidence. And through his guidance, I learned that every failure is simply another step toward growth. Sir Cyril did not only teach me how to speak. He taught me how to rise.</p>
     `
-},
-{
+  },
+  {
     id: 23,
     title: "When “Yes” Was the Wrong Answer",
     image: BASE_IMAGE_URL + "post/When Yes Was the Wrong Answer.gif",
@@ -524,6 +546,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 20, 2026",
     category: "Personal Growth",
     excerpt: "A reflection on my first debate experience in Oral Communication and how one simple word taught me the true meaning of preparation and presence of mind.",
+    copyright: true,
     content: `
       <p>One of the most unforgettable experiences I had in Grade 11 happened during our <strong>Oral Communication</strong> class. We were assigned to participate in a formal debate, and the topic centered on extrajudicial killings during the administration of <underline><a href="https://en.wikipedia.org/wiki/Rodrigo_Duterte" target="_blank">Rodrigo Duterte</a></underline>. I was part of the negative side, tasked to defend a position I barely understood at the time.</p>
 
@@ -543,7 +566,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p>That Grade 11 debate may have silenced me in the moment, but it strengthened my voice for the future.</p>
     `
-},
+  },
   {
     id: 24,
     title: "A Man Who Can Do What He Wants, Does What He Wants",
@@ -552,6 +575,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "February 21, 2026",
     category: "Personal Growth",
     excerpt: "A reflection on reclaiming personal freedom and the courage to live intentionally despite the weight of routine and responsibility.",
+    copyright: true,
     content: `
       <p>There comes a moment in many lives when dreams grow heavy—not because they vanish, but because the weight of routine makes them too difficult to carry. The air feels thicker, the days blur into one another, and the fire that once burned with possibility flickers quietly beneath layers of exhaustion.</p>
 
@@ -575,16 +599,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p>To live is not only to survive. It is to write a story with courage, with joy, with resilience. No matter how heavy the air feels, no matter how routine the days may seem, the pen is still in your hand. This is your life. Fill it with meaning. Shape it with choice. Let it be a story that reflects not just survival, but the beauty of becoming.</p>
     `
-},
-{        
-id: 25,        
-title: "Mathematics, Life, and the Balance Between Easy and Hard",        
-image: BASE_IMAGE_URL + "post/Mathematics, Life, and the Balance Between Easy and Hard.gif",        
-placeholderImage: getPlaceholder(25),        
-date: "February 21, 2026",        
-category: "Personal Growth",        
-excerpt: "A reflection on how lessons in mathematics mirror the choices, failures, and strategies we face in life.",        
-content:   `    
+  },
+  {
+    id: 25,
+    title: "Mathematics, Life, and the Balance Between Easy and Hard",
+    image: BASE_IMAGE_URL + "post/Mathematics, Life, and the Balance Between Easy and Hard.gif",
+    placeholderImage: getPlaceholder(25),
+    date: "February 21, 2026",
+    category: "Personal Growth",
+    excerpt: "A reflection on how lessons in mathematics mirror the choices, failures, and strategies we face in life.",
+    copyright: true,
+    content: `    
 <p>In my <strong>Mathematics in the Modern World</strong> class, my professor said something that stayed in my mind:</p>
 
 <blockquote>“If today is easy, expect tomorrow to be difficult. If today is difficult, tomorrow will be easy.”</blockquote>
@@ -636,16 +661,17 @@ content:   `
 
 <p>Life gives freedom, but freedom always carries responsibility. Maybe that is what my professor really meant. Not that difficulty automatically follows ease. Not that suffering guarantees comfort. But that our choices today are variables. And tomorrow is the result. And just like in mathematics, the result depends on how we solve the problem.</p>
 `
-},
-{
-  id: 26,
-  title: "Why Not You: A Personal Reflection on Courage and Action",
-  image: BASE_IMAGE_URL + "post/Why%20Not%20You.gif",
-  placeholderImage: getPlaceholder(26),
-  date: "February 22, 2026",
-  category: "Inspiration",
-  excerpt: "A personal reflection about courage, self-doubt, and the powerful question: Why not you?",
-  content: `
+  },
+  {
+    id: 26,
+    title: "Why Not You: A Personal Reflection on Courage and Action",
+    image: BASE_IMAGE_URL + "post/Why%20Not%20You.gif",
+    placeholderImage: getPlaceholder(26),
+    date: "February 22, 2026",
+    category: "Inspiration",
+    excerpt: "A personal reflection about courage, self-doubt, and the powerful question: Why not you?",
+    copyright: true,
+    content: `
 <p>I came across this powerful video on <u><a href="https://youtu.be/FGPbMHeZ-7g?si=GHs4DRbHax1U_-Bt" target="_blank">YouTube</a></u> titled <strong><italic>“Why Not You”</italic></strong>. At first, it sounded like a simple motivational message. But as I continued watching, I realized it was more than that. It felt personal. It felt direct. It felt like the speaker was asking me the question face to face.</p>
 
 <p>The line that stayed with me the most was:</p>
@@ -682,16 +708,17 @@ content:   `
 
 <p>And instead of finding excuses, I try to find reasons to move forward. Because maybe the only thing standing between me and my next level is the decision to believe that I am capable too.</p>
 `
-},
-{    
-  id: 27,    
-  title: "The Day I Started LanDecs",    
-  image: BASE_IMAGE_URL + "post/The Day I Started LanDecs.jpg",    
-  placeholderImage: getPlaceholder(27),    
-  date: "February 22, 2026",    
-  category: "Entrepreneurship",    
-  excerpt: "The story of Eldrex Delos Reyes Bula and how LanDecs started as a silent journey of resilience, courage, and small victories.",    
-  content: `    
+  },
+  {
+    id: 27,
+    title: "The Day I Started LanDecs",
+    image: BASE_IMAGE_URL + "post/The Day I Started LanDecs.jpg",
+    placeholderImage: getPlaceholder(27),
+    date: "February 22, 2026",
+    category: "Entrepreneurship",
+    excerpt: "The story of Eldrex Delos Reyes Bula and how LanDecs started as a silent journey of resilience, courage, and small victories.",
+    copyright: true,
+    content: `    
 <p>I grew up as a child with a dream I could not yet name, a dream bigger than my circumstances. While other children played, I would sit quietly, watching them, and ask myself, <strong>"What can I do differently? How can I make a life that matters?"</strong></p>    
 
 <p>Life at home was not easy. We lived with little, and though my family worked hard every day, it felt like nothing ever changed. But my mother, who I was very close to, taught me lessons that became the foundation of my journey. I followed her everywhere—whether she was farming, gathering firewood, or walking through the forest. I would ask her, <em>"Why is life so hard, even when we try so much?"</em> And she would tell me, <blockquote><em>"Because living is not about always winning. It is about showing up, even when the world feels heavy."</em></blockquote> Even as a child, I began to understand that hard work alone does not always guarantee success, but it builds strength and courage.</p>    
@@ -709,17 +736,18 @@ content:   `
 <p>LanDecs grew slowly, one small step at a time. It became a platform that helps students, professionals, and educators work more efficiently. Even without earning much, the joy came from helping people move forward, discover possibilities, and experience platforms that are simple, free, and accessible. I realized, <strong><em>"Success is not only about money. It is about lighting a path for others and proving to yourself that you can."</em></strong></p>    
 
 <p><strong>LanDecs is more than a company or a tool.</strong> It is the story of a child who dared to dream despite fear, frustration, and failure. Every line of code, every project, every small victory carries a piece of that journey. I hope it reminds others that small steps, persistence, and courage can create meaningful change. Even if the road is difficult, even if the tools are imperfect, keep creating. Keep pushing. Keep believing. One day, your effort will speak for itself.</p>    
-`    
-},
-{
-id: 28,
-title: "See Me After You",
-image: BASE_IMAGE_URL + "post/See Me After You.jpg",
-placeholderImage: getPlaceholder(28),
-date: "February 23, 2026",
-category: "Leadership",
-excerpt: "A reflection on leadership, responsibility, and the hard lessons learned when initiative is tested under pressure.",
-content:   `
+`
+  },
+  {
+    id: 28,
+    title: "See Me After You",
+    image: BASE_IMAGE_URL + "post/See Me After You.jpg",
+    placeholderImage: getPlaceholder(28),
+    date: "February 23, 2026",
+    category: "Leadership",
+    excerpt: "A reflection on leadership, responsibility, and the hard lessons learned when initiative is tested under pressure.",
+    copyright: true,
+    content: `
 <p><strong>Leadership</strong> is one of the most challenging roles in any group, whether in activities, projects, or collaborative work. I say this not because I read it somewhere, but because I have lived it. Being a leader is not just about giving instructions. It is about carrying responsibility, managing pressure, and sometimes finishing the work when others choose not to move.</p>
 
 <p>As a <em>working student</em> and an aspiring entrepreneur, I have handled teams with different mindsets, skills, and levels of commitment. At first, I believed leadership was simple: give clear instructions, provide complete information, set deadlines, and allow questions. I thought structure alone would guarantee action. I was wrong.</p>
@@ -740,16 +768,17 @@ content:   `
 
 <p>Leadership is difficult. It tests your patience. It challenges your mindset. But in that difficulty, you grow. And sometimes, before others ask what to do, you quietly finish what needs to be done.</p>
 `
-},
-{
-id: 29,
-title: "Enough, But Still Not Enough",
-image: BASE_IMAGE_URL + "post/Enough But Still Not Enough.gif",
-placeholderImage: getPlaceholder(29),
-date: "February 24, 2026",
-category: "Reflection",
-excerpt: "There are nights when I look at the moon and question myself if I am truly enough. Dreams are heavy, comparisons are louder, and discipline feels far away. But maybe being enough is not about achieving everything, it is about continuing even when you doubt yourself.",
-content:   `
+  },
+  {
+    id: 29,
+    title: "Enough, But Still Not Enough",
+    image: BASE_IMAGE_URL + "post/Enough But Still Not Enough.gif",
+    placeholderImage: getPlaceholder(29),
+    date: "February 24, 2026",
+    category: "Reflection",
+    excerpt: "There are nights when I look at the moon and question myself if I am truly enough. Dreams are heavy, comparisons are louder, and discipline feels far away. But maybe being enough is not about achieving everything, it is about continuing even when you doubt yourself.",
+    copyright: true,
+    content: `
 
 <p><strong>Enough, But Still Not Enough</strong></p>
 
@@ -798,16 +827,17 @@ content:   `
 <p><strong>You were becoming one.</strong></p>
 
 `
-},
-{
-  id: 30,
-  title: "Shhhh.",
-  image: BASE_IMAGE_URL + "post/shhhh.jpg",
-  placeholderImage: getPlaceholder(30),
-  date: "February 27, 2026",
-  category: "Reflection",
-  excerpt: "A single sound from our parents that carried fear, discipline, correction, and love — shaping how we understood respect, boundaries, and responsibility.",
-  content:   `
+  },
+  {
+    id: 30,
+    title: "Shhhh.",
+    image: BASE_IMAGE_URL + "post/shhhh.jpg",
+    placeholderImage: getPlaceholder(30),
+    date: "February 27, 2026",
+    category: "Reflection",
+    excerpt: "A single sound from our parents that carried fear, discipline, correction, and love — shaping how we understood respect, boundaries, and responsibility.",
+    copyright: true,
+    content: `
 <p><strong>“Shhhh.”</strong></p>
 
 <p>It is only a single sound. No long speech. No raised voice. Just a sharp breath released between the teeth. Yet in many homes, that sound carries the weight of <strong>authority</strong>, <strong>warning</strong>, and <strong>consequence</strong>.</p>
@@ -840,16 +870,17 @@ content:   `
 
 <p>In the end, that small sound was never just silence. It was a symbol of guidance, correction, and the complicated love of parents trying to raise children the best way they knew how.</p>
 `
-},
-{
-id: 31,
-title: "First Step to Manila",
-image: BASE_IMAGE_URL + "post/manila.jpg",
-placeholderImage: getPlaceholder(31),
-date: "February 27, 2026",
-category: "Reflection",
-excerpt: "A personal journey of courage, fear, and discovering Manila for the first time.",
-content:   `
+  },
+  {
+    id: 31,
+    title: "First Step to Manila",
+    image: BASE_IMAGE_URL + "post/manila.jpg",
+    placeholderImage: getPlaceholder(31),
+    date: "February 27, 2026",
+    category: "Reflection",
+    excerpt: "A personal journey of courage, fear, and discovering Manila for the first time.",
+    copyright: true,
+    content: `
 <p><strong>Manila.</strong></p>
 
 <p>It was the first time I decided to go far from my family, to step out of the familiar and into the unknown. I felt a mixture of hesitation and courage—the kind of courage that whispers, <em>“This is your chance; don’t let fear hold you back.”</em> Back home in our village, people would say things like, <q>It’s too hard to study in Manila,</q> <q>It’s dangerous there,</q> or <q>You won’t last long; they have killers and drug addicts everywhere.</q> Their words haunted me, yet they also sparked a curiosity I couldn’t ignore. I wanted to see the truth for myself.</p>
@@ -874,16 +905,17 @@ content:   `
 
 <p>Looking back, I now understand: fear is natural, uncertainty inevitable, but courage is what turns hesitation into opportunity. Manila taught me this: you cannot know what’s waiting for you unless you go. You cannot conquer fear unless you face it. And sometimes, the journey itself—messy, exhausting, and full of mistakes—is the reward.</p>
 `
-},
-{
-id: 32,
-title: "Who Am I Afraid of Being Behind?",
-image: BASE_IMAGE_URL + "post/leftbehind.gif",
-placeholderImage: getPlaceholder(32),
-date: "February 28, 2026",
-category: "Reflection",
-excerpt: "A personal reflection on the fear of being 'behind' and the realization that the real comparison is with the person I am capable of becoming.",
-content:   `
+  },
+  {
+    id: 32,
+    title: "Who Am I Afraid of Being Behind?",
+    image: BASE_IMAGE_URL + "post/leftbehind.gif",
+    placeholderImage: getPlaceholder(32),
+    date: "February 28, 2026",
+    category: "Reflection",
+    excerpt: "A personal reflection on the fear of being 'behind' and the realization that the real comparison is with the person I am capable of becoming.",
+    copyright: true,
+    content: `
 
 <p>When I imagine being <strong>“behind,”</strong> I do not immediately see other people standing in front of me. I see <em>versions of myself</em>.</p>
 
@@ -916,16 +948,17 @@ content:   `
 <p>So maybe being <strong>“behind”</strong> is not a position. Maybe it is a feeling that signals growth is still possible. And as long as growth is still possible, I am exactly where I need to be.</p>
 
 `
-},
-{
-  id: 33,
-  title: "Smiling in the Quiet War",
-  image: BASE_IMAGE_URL + "post/smiling-in-the-quiet-war.gif",
-  placeholderImage: getPlaceholder(33),
-  date: "April 09, 2024",
-  category: "Poetry",
-  excerpt: "A reflection on the silent battles hidden behind curated smiles and glowing screens.",
-  content: `
+  },
+  {
+    id: 33,
+    title: "Smiling in the Quiet War",
+    image: BASE_IMAGE_URL + "post/smiling-in-the-quiet-war.gif",
+    placeholderImage: getPlaceholder(33),
+    date: "April 09, 2024",
+    category: "Poetry",
+    excerpt: "A reflection on the silent battles hidden behind curated smiles and glowing screens.",
+    copyright: true,
+    content: `
   
   <p>
     <strong><em>The Smile That Breaks in Silence</em></strong>
@@ -1023,16 +1056,17 @@ content:   `
   </p>
 
   `
-},
-{
-id: 34,
-title: "When the World Gives You Nothing, You Have the Most Room to Build Everything",
-image: BASE_IMAGE_URL + "post/build-everything.jpg",
-placeholderImage: getPlaceholder(34),
-date: "March 6, 2026",
-category: "Reflection",
-excerpt: "A reflection on growing up in hardship, helping family survive, and how those experiences shaped resilience, gratitude, and purpose.",
-content: `
+  },
+  {
+    id: 34,
+    title: "When the World Gives You Nothing, You Have the Most Room to Build Everything",
+    image: BASE_IMAGE_URL + "post/build-everything.jpg",
+    placeholderImage: getPlaceholder(34),
+    date: "March 6, 2026",
+    category: "Reflection",
+    excerpt: "A reflection on growing up in hardship, helping family survive, and how those experiences shaped resilience, gratitude, and purpose.",
+    copyright: true,
+    content: `
 <p><em>"When the world gives you nothing, you have the most room to build everything."</em></p>
 
 <p>
@@ -1146,16 +1180,17 @@ But sometimes, <strong>when the world gives you nothing, it also gives you the g
 <p><em>And I am still building.</em></p>
 
 `
-},
-{
-  id: 35,
-  title: "When Winning Does Not Feel Like Winning",
-  image: BASE_IMAGE_URL + "post/unsatisfied.gif",
-  placeholderImage: getPlaceholder(35),
-  date: "March 8, 2026",
-  category: "Reflection",
-  excerpt: "Sometimes we finally achieve what we once wished for, yet the joy we expected is replaced with a quiet feeling of wanting something greater.",
-  content:   `
+  },
+  {
+    id: 35,
+    title: "When Winning Does Not Feel Like Winning",
+    image: BASE_IMAGE_URL + "post/unsatisfied.gif",
+    placeholderImage: getPlaceholder(35),
+    date: "March 8, 2026",
+    category: "Reflection",
+    excerpt: "Sometimes we finally achieve what we once wished for, yet the joy we expected is replaced with a quiet feeling of wanting something greater.",
+    copyright: true,
+    content: `
 <p>There are days when we wish we could <strong>win something important</strong>. Something valuable. Something beautiful. Something that proves the <em>effort, time, and dedication</em> we invested were worth it. We imagine the moment of success as a moment of pride where we can quietly say to ourselves that we finally made it.</p>
 
 <p>But sometimes when that moment arrives, the feeling is different from what we expected. Instead of pure happiness, we find ourselves thinking, <em>"I wish I could win more than this."</em> The achievement we once dreamed about suddenly feels smaller than the vision we created in our mind.</p>
@@ -1174,16 +1209,17 @@ But sometimes, <strong>when the world gives you nothing, it also gives you the g
 
 <p>And people whose vision keeps expanding are often the ones who eventually build things far greater than what they first imagined.</p>
 `
-},
-{
-id: 36,
-title: "A Stranger Who Chose to Lead",
-image: BASE_IMAGE_URL + "post/stranger-who-chose-to-lead.png",
-placeholderImage: getPlaceholder(36),
-date: "March 13, 2026",
-category: "Reflection",
-excerpt: "From being a stranger in Manila to becoming Vice President of the Integrated Computer Society, this journey reflects courage, growth, and the willingness to lead despite uncertainty.",
-content:   `
+  },
+  {
+    id: 36,
+    title: "A Stranger Who Chose to Lead",
+    image: BASE_IMAGE_URL + "post/stranger-who-chose-to-lead.png",
+    placeholderImage: getPlaceholder(36),
+    date: "March 13, 2026",
+    category: "Reflection",
+    excerpt: "From being a stranger in Manila to becoming Vice President of the Integrated Computer Society, this journey reflects courage, growth, and the willingness to lead despite uncertainty.",
+    copyright: true,
+    content: `
 <p>
 Living in a new city can make anyone feel like a stranger. When I first arrived in Manila, everything felt unfamiliar. I did not know many people, and I had only been here for about <strong>five months</strong>. Despite that, an unexpected opportunity appeared in front of me.
 </p>
@@ -1237,5 +1273,5 @@ I may not have years of leadership experience, but I have something just as impo
 Sometimes, the most meaningful leaders begin their journey as <em>strangers</em>.
 </p>
 `
-}
+  }
 ];

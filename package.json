@@ -6,14 +6,27 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "lint": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/canvas-confetti": "^1.9.0",
+    "@vercel/analytics": "^1.4.1",
+    "autoprefixer": "^10.4.27",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "firebase": "^12.10.0",
+    "framer-motion": "^11.3.24",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.424.0",
+    "postcss": "^8.5.8",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "framer-motion": "^11.3.24",
-    "lucide-react": "^0.424.0",
-    "@vercel/analytics": "^1.4.1"
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
