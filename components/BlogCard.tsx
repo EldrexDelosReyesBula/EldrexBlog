@@ -27,6 +27,15 @@ const BlogCard = forwardRef<HTMLElement, BlogCardProps>(({ post, onClick, index 
       transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
       className="group flex flex-col h-full cursor-pointer"
       onClick={() => onClick(post.id)}
+      role="button"
+      tabIndex={0}
+      aria-label={`Read story: ${post.title}`}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick(post.id);
+        }
+      }}
     >
       <div className="relative h-64 overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-800 mb-5 shadow-sm border border-slate-100/50 dark:border-slate-700/50 group-hover:shadow-xl group-hover:shadow-slate-200/50 dark:group-hover:shadow-black/50 transition-all duration-500">
         {!imageLoaded && (

@@ -39,9 +39,9 @@ const Footer: React.FC<FooterProps> = ({ onOpenPreferences, onOpenSettings, onNa
                   <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Home</button>
                   <button onClick={() => onNavigate('about')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">About</button>
                   <button onClick={() => onNavigate('contact')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0">Contact</button>
-                  <a href="https://ko-fi.com/landecsorg" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0 flex items-center gap-1">
-                      Support <ExternalLink size={10} />
-                  </a>
+                  <button onClick={() => onNavigate('donate')} className="text-slate-500 hover:text-brand-600 text-sm transition-colors text-left mx-auto md:mx-0 flex items-center gap-1">
+                      Support <Heart size={10} className="text-brand-500 fill-current" />
+                  </button>
               </div>
               <div className="flex flex-col gap-3">
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Legal</h4>
@@ -53,22 +53,22 @@ const Footer: React.FC<FooterProps> = ({ onOpenPreferences, onOpenSettings, onNa
 
           <div className="flex flex-col items-center md:items-end gap-4 flex-1">
             <div className="flex items-center gap-6 flex-wrap justify-center">
-                <a href="https://github.com/EldrexDelosReyesBula" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors transform hover:-translate-y-1">
+                <a href="https://github.com/EldrexDelosReyesBula" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors transform hover:-translate-y-1" aria-label="GitHub Profile">
                     <i className="fa-brands fa-github text-xl"></i>
                 </a>
-                <a href="https://bsky.app/profile/eldrex.bsky.social" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors transform hover:-translate-y-1">
+                <a href="https://bsky.app/profile/eldrex.bsky.social" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors transform hover:-translate-y-1" aria-label="BlueSky Profile">
                     <i className="fa-brands fa-bluesky text-xl"></i>
                 </a>
-                <a href="https://www.facebook.com/eldrex.landecs.org" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors transform hover:-translate-y-1">
+                <a href="https://www.facebook.com/eldrex.landecs.org" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors transform hover:-translate-y-1" aria-label="Facebook Profile">
                     <i className="fa-brands fa-facebook text-xl"></i>
                 </a>
-                <a href="https://www.instagram.com/landecs_ld" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-pink-600 transition-colors transform hover:-translate-y-1">
+                <a href="https://www.instagram.com/landecs_ld" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-pink-600 transition-colors transform hover:-translate-y-1" aria-label="Instagram Profile">
                     <i className="fa-brands fa-instagram text-xl"></i>
                 </a>
-                <a href="https://www.threads.com/@landecs_ld" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors transform hover:-translate-y-1">
+                <a href="https://www.threads.com/@landecs_ld" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors transform hover:-translate-y-1" aria-label="Threads Profile">
                     <i className="fa-brands fa-threads text-xl"></i>
                 </a>
-                <a href="https://ngl.link/eldrex.me" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-purple-600 transition-colors transform hover:-translate-y-1">
+                <a href="https://ngl.link/eldrex.me" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-purple-600 transition-colors transform hover:-translate-y-1" aria-label="NGL Link">
                     <i className="fa-solid fa-paper-plane text-xl"></i>
                 </a>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PenTool, Search, Sliders, X } from 'lucide-react';
+import { PenTool, Search, Sliders, X, Coffee } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface HeaderProps {
@@ -35,6 +35,15 @@ const Header: React.FC<HeaderProps> = ({ isHome, onOpenSettings }) => {
             <div 
               className="flex items-center group cursor-pointer" 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'})}
+              role="button"
+              aria-label="Eldrex Writings - Back to top"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth'});
+                }
+              }}
             >
               <div className="relative h-10 sm:h-12 w-auto group-hover:scale-105 transition-all duration-300 rounded-2xl overflow-hidden shadow-sm group-hover:shadow-md">
                 {!logoLoaded && (
@@ -50,6 +59,22 @@ const Header: React.FC<HeaderProps> = ({ isHome, onOpenSettings }) => {
             </div>
 
             <div className="flex items-center gap-3 ml-auto">
+              {/* Donate Button */}
+              <button 
+                onClick={() => {
+                  const event = new CustomEvent('navigate-to-page', { detail: 'donate' });
+                  window.dispatchEvent(event);
+                }}
+                className={`hidden sm:flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold transition-all active:scale-95 ${
+                  !isTransparent 
+                    ? 'bg-brand-600 text-white shadow-lg shadow-brand-500/20 hover:bg-brand-700' 
+                    : 'bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20'
+                }`}
+              >
+                <Coffee size={14} />
+                Support
+              </button>
+
               {/* Settings Button */}
               <button 
                 onClick={onOpenSettings}

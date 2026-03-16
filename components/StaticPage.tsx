@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, FileText, User, Shield, Copyright, ExternalLink, Lock, Database, Eye } from 'lucide-react';
+import { ArrowLeft, FileText, User, Shield, Copyright, ExternalLink, Lock, Database, Eye, Coffee } from 'lucide-react';
 
-export type PageType = 'about' | 'privacy' | 'terms' | 'copyright' | 'contact';
+export type PageType = 'about' | 'privacy' | 'terms' | 'copyright' | 'contact' | 'donate';
 
 interface StaticPageProps {
   type: PageType;
@@ -12,6 +12,35 @@ interface StaticPageProps {
 const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
   const renderContent = () => {
     switch (type) {
+      case 'donate':
+        return (
+          <>
+            <div className="flex justify-center mb-6 text-brand-600 dark:text-brand-400">
+               <Coffee size={48} />
+            </div>
+            <h2 className="text-4xl font-serif font-bold text-center mb-4 text-slate-900 dark:text-white">Support My Work</h2>
+            <p className="text-center text-slate-500 mb-10 max-w-xl mx-auto">
+              If you enjoy my writing and want to support the journey, you can buy me a coffee! 
+              Your support helps keep this blog running and allows me to dedicate more time to storytelling.
+            </p>
+            
+            <div className="w-full h-[650px] rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-inner bg-white">
+              <iframe 
+                id='kofiframe' 
+                src='https://ko-fi.com/landecsorg/?hidefeed=true&widget=true&embed=true&preview=true' 
+                style={{ border: 'none', width: '100%', padding: '4px', background: '#f9f9f9' }} 
+                height='650' 
+                title='landecsorg'
+              />
+            </div>
+            
+            <div className="mt-12 text-center">
+              <p className="text-sm text-slate-400">
+                Secure payments processed via Ko-fi. Thank you for your kindness!
+              </p>
+            </div>
+          </>
+        );
       case 'contact':
         return (
           <>
@@ -78,87 +107,74 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                <Shield size={48} />
             </div>
             <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Privacy Policy</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: February 25, 2026</p>
+            <p className="text-center text-slate-500 mb-10 text-sm">Last Updated: March 16, 2026</p>
             
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
+              <p className="lead">
+                Your privacy is of paramount importance to us. This Privacy Policy outlines how Eldrex Writings ("we", "our", or "the Blog") 
+                collects, uses, and protects your information when you visit our website at <strong>eldrex.landecs.org</strong>.
+              </p>
+
+              <h3>1. Data Collection and Usage</h3>
               <p>
-                At Eldrex Writings, accessible from <strong>eldrex.landecs.org</strong>, one of our main priorities is the privacy of our visitors. 
-                This Privacy Policy document details the types of information that is collected and recorded by Eldrex Writings and how we use it. 
-                By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+                We adhere to a "privacy-by-design" philosophy. We do not require user registration, and we do not collect Personally Identifiable Information (PII) 
+                such as your name, physical address, or phone number unless you explicitly provide it through direct contact.
               </p>
 
               <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 my-8 not-prose">
-                 <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white mb-3 text-lg">
-                    <Database size={20} className="text-brand-600" /> Information We Collect
-                 </h3>
-                 <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
-                    We believe in minimalism regarding data. We do not require you to create an account or provide personal identification 
-                    (such as your name or email address) to read our content.
-                 </p>
-                 <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                    <li className="flex gap-2">
-                        <span className="text-brand-500 font-bold">•</span>
-                        <span><strong>Usage Data:</strong> We collect anonymous metrics regarding how you interact with the site (pages visited, time spent, scrolling behavior).</span>
+                 <h4 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white mb-3 text-lg">
+                    <Database size={20} className="text-brand-600" /> Technical Data We Process
+                 </h4>
+                 <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                    <li className="flex gap-3">
+                        <div className="mt-1 bg-brand-500 rounded-full h-1.5 w-1.5 flex-shrink-0" />
+                        <span><strong>Anonymous Analytics:</strong> We process aggregated data regarding site traffic, popular content, and user engagement levels to improve our storytelling.</span>
                     </li>
-                    <li className="flex gap-2">
-                        <span className="text-brand-500 font-bold">•</span>
-                        <span><strong>Device Information:</strong> We may collect non-identifiable data about your device type, browser version, and screen size to optimize readability.</span>
+                    <li className="flex gap-3">
+                        <div className="mt-1 bg-brand-500 rounded-full h-1.5 w-1.5 flex-shrink-0" />
+                        <span><strong>Interaction Metrics:</strong> We track non-identifiable interactions such as scroll depth, reading time, and feature usage (e.g., Read Aloud, Highlights).</span>
+                    </li>
+                    <li className="flex gap-3">
+                        <div className="mt-1 bg-brand-500 rounded-full h-1.5 w-1.5 flex-shrink-0" />
+                        <span><strong>Device Metadata:</strong> Information about your browser type, operating system, and screen resolution is used solely for responsive design optimization.</span>
                     </li>
                  </ul>
               </div>
 
-              <h3>1. Analytics & Performance</h3>
+              <h3>2. Third-Party Services</h3>
               <p>
-                We utilize <strong>Vercel Analytics</strong> to understand website traffic and performance. This service collects anonymous data 
-                aggregated from visitors. It does not track your browsing history across other websites, nor does it collect Personally Identifiable Information (PII). 
-                You have the right to opt-out of this collection via the "Settings" menu in our footer.
-              </p>
-
-              <h3>2. Advertising Partners</h3>
-              <p>
-                We may use third-party advertising companies (such as Google AdSense) to serve content and advertisements when you visit our website. 
-                These companies may use cookies, as noted above, to serve ads based on your prior visits to this website or other websites on the internet.
+                To provide a high-quality experience, we utilize select third-party services. Each service has its own privacy standards:
               </p>
               <ul>
-                  <li>
-                      <strong>Google AdSense:</strong> Google, as a third-party vendor, uses cookies to serve ads on Eldrex Writings. 
-                      Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our site and/or other sites on the Internet. 
-                      You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.
-                  </li>
+                <li><strong>Vercel Analytics:</strong> Used for privacy-focused traffic monitoring. It does not use persistent cookies or track users across different sites.</li>
+                <li><strong>Firebase (Google Cloud):</strong> Powers our interactive features like ratings and highlights. Data is stored anonymously and is not linked to your real-world identity.</li>
+                <li><strong>Google AdSense:</strong> We may display advertisements. Google uses cookies to serve ads based on your interests. You can manage these via <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ad Settings</a>.</li>
               </ul>
 
-              <h3>3. Local Storage & Preferences</h3>
+              <h3>3. Local Storage Technology</h3>
               <p>
-                Instead of invasive cookies, we use your browser's <strong>Local Storage</strong> to improve your user experience. 
-                This data stays on your device and includes:
+                We use browser-based <strong>Local Storage</strong> instead of tracking cookies for site preferences. This data remains on your device and is not transmitted to our servers. It stores:
               </p>
               <ul>
-                <li><strong>Theme Preference:</strong> Saving your choice of Light, Dark, or System mode.</li>
-                <li><strong>Texture Preference:</strong> Saving your choice of Clean or Paper texture.</li>
-                <li><strong>Font Settings:</strong> Remembering your preferred font size and style.</li>
-                <li><strong>Read Count:</strong> Tracking how many articles you've read to display relevant support banners.</li>
-                <li><strong>Consent Status:</strong> Remembering if you accepted or declined analytics.</li>
+                <li>Visual preferences (Theme, Texture, Font size).</li>
+                <li>Reading progress and session-based interactions.</li>
+                <li>Consent preferences for analytics and cookies.</li>
               </ul>
 
-              <h3>4. Third-Party Links</h3>
+              <h3>4. Data Security</h3>
               <p>
-                Our website contains links to other websites (e.g., Ko-fi, GitHub, Facebook, Instagram). If you click on a third-party link, 
-                you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to 
-                review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, 
-                or practices of any third-party sites or services.
+                We implement industry-standard security measures, including SSL/TLS encryption, to protect data in transit. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
               </p>
 
-              <h3>5. Children's Information</h3>
+              <h3>5. Your Rights</h3>
               <p>
-                We do not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child 
-                provided this kind of information on our website, we strongly encourage you to contact us immediately, and we will do our best 
-                efforts to promptly remove such information from our records.
+                Depending on your location (e.g., GDPR in the EU, CCPA in California), you may have rights regarding your data. Since we do not store PII, most requests for "deletion" or "access" are inherently satisfied by our anonymous architecture. You can clear your site data at any time by clearing your browser's cache and local storage.
               </p>
 
               <hr />
               
               <p className="text-sm italic opacity-80">
-                If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+                For inquiries regarding this policy, please contact us at <a href="mailto:eldrexdelosreyesbula@gmail.com">eldrexdelosreyesbula@gmail.com</a>.
               </p>
             </div>
           </>
@@ -169,67 +185,65 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
             <div className="flex justify-center mb-6 text-slate-400 dark:text-slate-500">
                <FileText size={48} />
             </div>
-            <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Terms of Use</h2>
-            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: February 25, 2026</p>
+            <h2 className="text-4xl font-serif font-bold text-center mb-2 text-slate-900 dark:text-white">Terms of Service</h2>
+            <p className="text-center text-slate-500 mb-10 text-sm">Effective Date: March 16, 2026</p>
 
             <div className="prose prose-lg prose-slate dark:prose-invert mx-auto">
-              <p>
-                Welcome to <strong>Eldrex Writings</strong>. By accessing this website, you agree to comply with and be bound by the following 
-                terms and conditions of use, which together with our Privacy Policy govern our relationship with you in relation to this website.
+              <p className="lead">
+                By accessing Eldrex Writings, you agree to be bound by these Terms of Service, all applicable laws and regulations, 
+                and agree that you are responsible for compliance with any applicable local laws.
               </p>
 
-              <h3>1. Intellectual Property Rights</h3>
+              <h3>1. Intellectual Property License</h3>
               <p>
-                Unless otherwise stated, <strong>Eldrex Delos Reyes Bula</strong> owns the intellectual property rights for the written content 
-                (articles, stories, code snippets, and reflections) on Eldrex Writings. All intellectual property rights are reserved.
+                The content published on this Blog, including but not limited to text, original graphics, and code, is the exclusive property of 
+                <strong>Eldrex Delos Reyes Bula</strong>. 
               </p>
-              <p><strong>You may:</strong></p>
+              <p><strong>Permitted Use:</strong></p>
               <ul>
-                <li>Read, view, and print pages for your own personal use.</li>
-                <li>Share links to our content on social media or other platforms.</li>
-                <li>Quote short excerpts (up to 100 words) with a clear credit and hyperlink back to the original article.</li>
+                <li>You are granted a limited, non-exclusive license to access and view the content for personal, non-commercial use.</li>
+                <li>Sharing via social media with proper attribution is encouraged.</li>
               </ul>
-              <p><strong>You must not:</strong></p>
+              <p><strong>Prohibited Use:</strong></p>
               <ul>
-                <li>Republish material from Eldrex Writings without explicit written consent.</li>
-                <li>Sell, rent, or sub-license material from Eldrex Writings.</li>
-                <li>Reproduce, duplicate, or copy full articles for commercial purposes.</li>
+                <li>Commercial exploitation, reproduction, or redistribution of full articles without express written permission.</li>
+                <li>Use of automated systems (scrapers, bots) to extract data from the Blog.</li>
+                <li>Modification or "mirroring" of the content on any other server.</li>
               </ul>
 
-              <h3>2. User Conduct</h3>
-              <p>
-                By using this website, you agree not to use it in any way that causes, or may cause, damage to the website or impairment of the 
-                availability or accessibility of Eldrex Writings. You must not use this website to copy, store, host, transmit, send, use, publish, 
-                or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, 
-                rootkit, or other malicious computer software.
-              </p>
-
-              <h3>3. Advertising & Monetization</h3>
-              <p>
-                This website uses Google AdSense to display advertisements. By using the site, you acknowledge that ads may be served by Google and other third-party vendors. 
-                We are not responsible for the content, accuracy, or products advertised in these third-party ads. Interaction with any advertisement is at your own discretion and risk.
-              </p>
-
-              <h3>4. Disclaimer</h3>
-              <div className="bg-amber-50 dark:bg-amber-900/10 p-5 rounded-lg border-l-4 border-amber-500 not-prose my-6">
-                <p className="text-slate-700 dark:text-slate-200 text-sm m-0">
-                  The information provided on this blog is for general informational and educational purposes only. It reflects the personal 
-                  experiences and opinions of the author. It does not constitute professional advice (medical, legal, financial, or psychological). 
-                  Any action you take upon the information you find on this website is strictly at your own risk.
+              <h3>2. Disclaimer of Warranties</h3>
+              <div className="bg-amber-50 dark:bg-amber-900/10 p-6 rounded-2xl border-l-4 border-amber-500 not-prose my-8">
+                <p className="text-slate-800 dark:text-slate-200 text-sm font-medium m-0 leading-relaxed">
+                  The materials on Eldrex Writings are provided on an 'as is' basis. We make no warranties, expressed or implied, 
+                  and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions 
+                  of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.
                 </p>
               </div>
 
-              <h3>5. External Links</h3>
+              <h3>3. Limitations of Liability</h3>
               <p>
-                From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality 
-                links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites 
-                do not imply a recommendation for all the content found on these sites.
+                In no event shall Eldrex Delos Reyes Bula or its suppliers be liable for any damages (including, without limitation, 
+                damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the 
+                materials on the Blog, even if we have been notified orally or in writing of the possibility of such damage.
               </p>
 
-              <h3>6. Changes to These Terms</h3>
+              <h3>4. Accuracy of Materials</h3>
               <p>
-                We reserve the right to revise these terms and conditions at any time. By using this website, you are expected to review these terms 
-                on a regular basis.
+                The materials appearing on Eldrex Writings could include technical, typographical, or photographic errors. 
+                We do not warrant that any of the materials on its website are accurate, complete, or current. 
+                We may make changes to the materials contained on its website at any time without notice.
+              </p>
+
+              <h3>5. Governing Law</h3>
+              <p>
+                These terms and conditions are governed by and construed in accordance with the laws of the Philippines, 
+                and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+              </p>
+
+              <hr />
+              
+              <p className="text-sm italic opacity-80">
+                We reserve the right to update these terms at any time. Continued use of the site constitutes acceptance of the revised terms.
               </p>
             </div>
           </>
@@ -271,33 +285,32 @@ const StaticPage: React.FC<StaticPageProps> = ({ type, onBack }) => {
                 <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
                   The images featured in the articles below are respectfully acknowledged as the property of their respective owners:
                 </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-sm font-medium text-slate-700 dark:text-slate-300">
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> What if AI Can Feel?</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Perfection Replaces Emotions</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> If You Have Time to Sit</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Responsibility Becomes a Teacher</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Future You in an AI Era</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> The Distance of the Sun</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Climbing Beyond the Impossible</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Strength in Silence</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Belief We Believe</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Worth a Thousand</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Judgement Where I Began to Change</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Doubt Walks Beside Me</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> The Space I Need</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> The Teacher Who Taught Me to Rise</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Yes Was the Wrong Answer</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> A Man Who Can Do What He Wants, Does What He Wants</li>
-                  <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Mathematics, Life, and the Balance Between Easy and Hard</li>
-                 <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Why Not You: A Personal Reflection on Courage and Action</li>
-                 <li className="flex items-start gap-2"><span className="text-brand-500">•</span> See Me After You</li>
-                <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Enough But Still Not Enough</li>
-                <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Shhhh.</li>
-                <li className="flex items-start gap-2"><span className="text-brand-500">•</span> Who Am I Afraid of Being Behind?</li>
-                <li className="flex items-start gap-2"><span className="text-brand-500">•</span> A Stranger Who Chose to Lead</li>
-               <li className="flex items-start gap-2"><span className="text-brand-500">•</span> When Winning Does Not Feel Like Winning</li>
-
-                </ul>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  <div className="flex items-start gap-2">What if AI Can Feel?</div>
+                  <div className="flex items-start gap-2">When Perfection Replaces Emotions</div>
+                  <div className="flex items-start gap-2">If You Have Time to Sit</div>
+                  <div className="flex items-start gap-2">When Responsibility Becomes a Teacher</div>
+                  <div className="flex items-start gap-2">Future You in an AI Era</div>
+                  <div className="flex items-start gap-2">The Distance of the Sun</div>
+                  <div className="flex items-start gap-2">Climbing Beyond the Impossible</div>
+                  <div className="flex items-start gap-2">Strength in Silence</div>
+                  <div className="flex items-start gap-2">Belief We Believe</div>
+                  <div className="flex items-start gap-2">Worth a Thousand</div>
+                  <div className="flex items-start gap-2">Judgement Where I Began to Change</div>
+                  <div className="flex items-start gap-2">When Doubt Walks Beside Me</div>
+                  <div className="flex items-start gap-2">The Space I Need</div>
+                  <div className="flex items-start gap-2">The Teacher Who Taught Me to Rise</div>
+                  <div className="flex items-start gap-2">When Yes Was the Wrong Answer</div>
+                  <div className="flex items-start gap-2">A Man Who Can Do What He Wants, Does What He Wants</div>
+                  <div className="flex items-start gap-2">Mathematics, Life, and the Balance Between Easy and Hard</div>
+                  <div className="flex items-start gap-2">Why Not You: A Personal Reflection on Courage and Action</div>
+                  <div className="flex items-start gap-2">See Me After You</div>
+                  <div className="flex items-start gap-2">Enough But Still Not Enough</div>
+                  <div className="flex items-start gap-2">Shhhh.</div>
+                  <div className="flex items-start gap-2">Who Am I Afraid of Being Behind?</div>
+                  <div className="flex items-start gap-2">A Stranger Who Chose to Lead</div>
+                  <div className="flex items-start gap-2">When Winning Does Not Feel Like Winning</div>
+                </div>
               </div>
 
               <h3>Removal Request</h3>
