@@ -1273,5 +1273,84 @@ I may not have years of leadership experience, but I have something just as impo
 Sometimes, the most meaningful leaders begin their journey as <em>strangers</em>.
 </p>
 `
-  }
+  },
+ {
+id: 37,
+title: "Exhausted of Everything",
+image: BASE_IMAGE_URL + "post/exhausted-of-everything.png",
+placeholderImage: getPlaceholder(40),
+date: "March 21, 2026",
+category: "Reflection",
+excerpt: "A quiet kind of exhaustion that no one sees, yet is deeply felt.",
+copyright: true,
+content:   `
+
+<p><strong>Exhausted of everything.</strong></p>
+
+<p>
+I sit there, surrounded by noise that I can’t seem to belong to. Everyone else is raising their hands, eager, alive, ready to be seen. And I wonder how they do it so easily. How they still have the energy to care, to try, to reach for something more.
+</p>
+
+<p>
+Because me? <em>I’m tired.</em>
+</p>
+
+<p>
+Not the kind of tired that sleep can fix. It’s the kind that settles into your mind, your chest, your thoughts. The kind that makes even simple things feel difficult. The kind that turns effort into something you have to force, not something that comes naturally anymore.
+</p>
+
+<p>
+I’m still here. I’m still writing, still thinking, still doing what I’m supposed to do. But it feels different. Like I’m just going through the motions while everyone else is fully living in the moment.
+</p>
+
+<p>
+And the hardest part is <u>no one really sees it</u>.
+</p>
+
+<blockquote>
+They see me sitting there, quiet, maybe focused, maybe just “normal.” But inside, it feels like I’m carrying something I can’t explain.
+</blockquote>
+
+<p>
+A weight that doesn’t have a clear reason, yet it’s always there. Draining me slowly.
+</p>
+
+<p>
+Sometimes I ask myself if I’m just falling behind. If I lost something they still have. That spark. That drive. That excitement to raise my hand and say, <em>“I want this.”</em>
+</p>
+
+<p>
+Because I used to feel that too.
+</p>
+
+<p>
+Now, I just want to get through the day without feeling overwhelmed. I just want a moment where everything feels light again, even just for a while.
+</p>
+
+<p>
+But even in this exhaustion, <strong>I’m still here.</strong>
+</p>
+
+<p>
+And maybe that means something.
+</p>
+
+<p>
+Maybe it means I haven’t given up, even if it feels like I’m close. Maybe it means there’s still a part of me holding on, quietly, patiently waiting for things to feel okay again.
+</p>
+
+<p>
+So for now, I sit in this moment. Not okay, not completely broken either. Just tired.
+</p>
+
+<p>
+<strong><em>Exhausted of everything.</em></strong>
+</p>
+
+<p>
+But still here.
+</p>
+
+`
+}
 ];
